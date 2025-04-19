@@ -364,6 +364,19 @@ a.dotted-link:hover {
   font-weight: normal;
 }
 
+.experience .item ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience .item ul li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+  color: #434343;
+}
+
 /* Git section */
 .github-graph {
   margin-bottom: 30px;
