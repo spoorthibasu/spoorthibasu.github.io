@@ -128,6 +128,10 @@ a.dotted-link:hover {
 }
 
 .header .profile-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
   margin-right: 30px;
 }
 
