@@ -105,6 +105,15 @@ a.btn-cta-secondary:hover, .btn-cta-secondary:hover {
   background-clip: padding-box;
 }
 
+.small-profile-image {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
 a.dotted-link {
   border-bottom: 1px dotted #778492;
   color: #778492;
