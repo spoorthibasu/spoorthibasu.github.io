@@ -1,443 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Spoorthi Basu</title>
-    <!-- Meta -->
+    <title>Spoorthi Basu, Software Engineer</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/spoorthi.png">
-
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-    <!-- FontAwesome JS -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <script defer src="assets/fontawesome/js/all.js"></script>
-
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-
-    <!-- github activity css -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-
-    <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
-     <meta property="og:title" content="Spoorthi Basu">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=2">
+    <meta property="og:title" content="Spoorthi Basu">
     <meta name="image" property="og:image" content="https://spoorthibasu.github.io/assets/images/spoorthi_basu.jpg">
-    <meta property="og:description" content="Spoorthi Basu Portfolio">
+    <meta property="og:description" content="Spoorthi Basu, Software Engineer">
     <meta property="og:url" content="https://spoorthibasu.github.io/">
-    <meta name="twitter:card" content="Spoorthi Basu">
-
-
-
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="a65482a7-5d51-4f77-87db-a0a8a8e39280"></script>
 </head>
-
 <body>
-    <!-- ******HEADER****** -->
-    <header class="header">
-        <div class="container clearfix">
-            <img class="profile-image img-fluid float-left" src="assets/images/spoorthi_basu.png" alt="Spoorthi Basu" />
-            <div class="profile-content float-left">
-                <h1 class="name">Spoorthi Basu</h1>
-                <h2 class="desc">Software Engineer</h2>
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/spoorthibasu" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/spoorthibasu" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+
+<!-- ======= NAV ======= -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu" data-ev="menu-toggle">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about" data-ev="nav-click" data-ev-target="about">About</a></li>
+            <li><a href="#experience" data-ev="nav-click" data-ev-target="experience">Experience</a></li>
+            <li><a href="#projects" data-ev="nav-click" data-ev-target="projects">Projects</a></li>
+            <li><a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Credentials</a></li>
+            <li><a href="#skills" data-ev="nav-click" data-ev-target="skills">Skills</a></li>
+        </ul>
+        <div class="nav-end">
+            <a href="assets/images/Spoorthi_Basu_Resume.pdf" target="_blank" data-ev="resume-download" data-ev-source="nav" class="nav-resume">Resume <i class="fas fa-external-link-alt"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=spoorthibasu@gmail.com" target="_blank" data-ev="contact-email" data-ev-source="nav" class="nav-cta">Get in Touch</a>
+        </div>
+    </div>
+    <nav class="nav-mobile-menu" id="nav-mobile-menu">
+        <a href="#about" data-ev="nav-click" data-ev-target="about">About</a>
+        <a href="#experience" data-ev="nav-click" data-ev-target="experience">Experience</a>
+        <a href="#projects" data-ev="nav-click" data-ev-target="projects">Projects</a>
+        <a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Credentials</a>
+        <a href="#skills" data-ev="nav-click" data-ev-target="skills">Skills</a>
+    </nav>
+    <div class="nav-progress" id="nav-progress"></div>
+</nav>
+
+<!-- ======= HERO ======= -->
+<section id="hero" class="hero">
+    <div class="hero-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-grid"></div>
+    <div class="hero-inner">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for new opportunities
+            </div>
+            <h1 class="hero-name">Spoorthi<br><span>Basu</span></h1>
+            <p class="hero-role">Software Engineer · Distributed Systems · Real-Time Data Infrastructure</p>
+            <p class="hero-tagline">I build distributed systems that move data at scale. Real-time pipelines, high-throughput APIs, and the infrastructure that keeps them reliable.</p>
+            <div class="hero-signals">
+                <a href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fas fa-book-open"></i> InfoQ Published Author</a>
+                <a href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fab fa-github"></i> Apache Flink CDC Contributor</a>
+                <a href="#experience" data-ev="hero-metric-events" class="hero-signal hero-signal--link"><i class="fas fa-server"></i> 100M+ Events / Day</a>
+            </div>
+            <div class="hero-actions">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=spoorthibasu@gmail.com" target="_blank" data-ev="contact-email" data-ev-source="hero" class="btn-primary">
+                    <i class="fas fa-paper-plane"></i> Get in Touch
+                </a>
+                <a href="assets/images/Spoorthi_Basu_Resume.pdf" target="_blank" data-ev="resume-download" data-ev-source="hero" class="btn-ghost">
+                    Resume <i class="fas fa-external-link-alt"></i>
+                </a>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/spoorthibasu" target="_blank" title="LinkedIn" data-ev="outbound-linkedin" data-ev-source="hero"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/spoorthibasu" target="_blank" title="GitHub" data-ev="outbound-github" data-ev-source="hero"><i class="fab fa-github-alt"></i></a>
+                </div>
+            </div>
+            <p class="hero-location"><i class="fas fa-map-marker-alt"></i> Indianapolis, IN &middot; Open to relocation</p>
+        </div>
+        <div class="hero-photo-wrap">
+            <div class="hero-photo-glow"></div>
+            <img src="assets/images/spoorthibasu.png" alt="Spoorthi Basu" class="hero-photo">
+        </div>
+    </div>
+    <a href="#metrics" data-ev="scroll-hint" class="scroll-hint" aria-label="Scroll down">
+        <i class="fas fa-chevron-down"></i>
+    </a>
+</section>
+
+<!-- ======= METRICS ======= -->
+<div id="metrics" class="metrics">
+    <div class="metrics-inner">
+        <div class="metric reveal">
+            <div class="metric-num">5<span>+</span></div>
+            <div class="metric-lbl">Years of<br>experience</div>
+        </div>
+        <div class="metric-sep"></div>
+        <div class="metric reveal">
+            <div class="metric-num">100M<span>+</span></div>
+            <div class="metric-lbl">Events processed<br>per day</div>
+        </div>
+        <div class="metric-sep"></div>
+        <div class="metric reveal">
+            <div class="metric-num">99.99<span>%</span></div>
+            <div class="metric-lbl">Uptime<br>delivered</div>
+        </div>
+        <div class="metric-sep"></div>
+        <div class="metric reveal">
+            <div class="metric-num">5K<span>+ RPS</span></div>
+            <div class="metric-lbl">APIs<br>engineered</div>
+        </div>
+    </div>
+</div>
+
+<!-- ======= WHAT I BUILD ======= -->
+<section class="specialties">
+    <div class="si">
+        <h2 class="stitle reveal">What I Build</h2>
+        <div class="spec-grid">
+            <div class="spec-card reveal">
+                <div class="spec-ico"><i class="fas fa-bolt"></i></div>
+                <h3>Real-time Stream Processing</h3>
+                <p>Apache Kafka + Flink pipelines ingesting hundreds of millions of events daily into schema-driven, analytics-ready Iceberg tables on S3.</p>
+                <div class="spec-tags"><span>Kafka</span><span>Flink</span><span>Iceberg</span><span>Avro</span></div>
+            </div>
+            <div class="spec-card reveal">
+                <div class="spec-ico"><i class="fas fa-network-wired"></i></div>
+                <h3>Distributed Systems</h3>
+                <p>Fault-tolerant, multi-region Java microservices with circuit breakers, event partitioning, and 99.99% uptime across sustained production workloads.</p>
+                <div class="spec-tags"><span>Java</span><span>Resilience4j</span><span>Multi-region</span></div>
+            </div>
+            <div class="spec-card reveal">
+                <div class="spec-ico"><i class="fas fa-layer-group"></i></div>
+                <h3>High-Scale API Engineering</h3>
+                <p>Spring Boot REST APIs handling 5K+ RPS with Redis cache sharding that cuts database load by 50%, built for reliability under sustained traffic.</p>
+                <div class="spec-tags"><span>Spring Boot</span><span>Redis</span><span>REST</span></div>
+            </div>
+            <div class="spec-card reveal">
+                <div class="spec-ico"><i class="fas fa-database"></i></div>
+                <h3>Data Infrastructure</h3>
+                <p>End-to-end data platforms: event modeling, schema consolidation, download APIs, and analytics infrastructure that scales to hundreds of millions of events per day.</p>
+                <div class="spec-tags"><span>AWS S3</span><span>DynamoDB</span><span>Schema Design</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= ABOUT ======= -->
+<section id="about" class="about">
+    <div class="si">
+        <h2 class="stitle reveal">About Me</h2>
+        <div class="about-grid">
+            <div class="about-bio reveal">
+                <p>I'm a Software Engineer with 5+ years building the infrastructure that makes data move: reliably, at scale, and in real time. At Genesys, I've engineered systems processing hundreds of millions of events per day, APIs that handle 5K+ requests per second, and testing infrastructure that went from zero to production-grade in weeks.</p>
+                <p>My work spans the full data path, from Kafka topics and Flink jobs to Iceberg tables and the REST APIs that serve data to end users. I care deeply about correctness, fault tolerance, and the operational rigor that makes systems boring, which is exactly what production needs.</p>
+                <p>I recently built the company's first end-to-end data validation framework, now adopted across three teams. I've also published in InfoQ on schema proliferation in Kafka and Flink pipelines, and I'm an active contributor to Apache Flink CDC.</p>
+            </div>
+            <div class="about-aside reveal">
+                <div class="aside-card">
+                    <div class="aside-label">Currently at</div>
+                    <div class="aside-company">
+                        <a href="https://www.genesys.com" target="_blank" data-ev="company-genesys" data-ev-source="about">Genesys <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="aside-role">Software Engineer</div>
+                    <div class="aside-since">Mar 2021 · Present</div>
+                </div>
+                <div class="aside-card">
+                    <div class="aside-label">Core Stack</div>
+                    <div class="stack-pills">
+                        <span>Java</span><span>Apache Kafka</span><span>Apache Flink</span>
+                        <span>Apache Iceberg</span><span>AWS</span><span>Redis</span>
+                        <span>Spring Boot</span><span>Docker</span><span>Terraform</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= EXPERIENCE ======= -->
+<section id="experience" class="experience">
+    <div class="si">
+        <h2 class="stitle reveal">Work Experience</h2>
+        <div class="timeline">
+            <div class="tl-track"></div>
+
+            <div class="tl-item reveal">
+                <div class="tl-dot"></div>
+                <div class="tl-body">
+                    <div class="tl-head">
+                        <div class="tl-titles">
+                            <h3 class="tl-role">Software Engineer</h3>
+                            <div class="tl-co"><a href="https://www.genesys.com" target="_blank" data-ev="company-genesys" data-ev-source="experience">Genesys</a> · Cloud Contact Center Platform</div>
+                        </div>
+                        <div class="tl-period">Mar 2021 · Present</div>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li>Built Flink pipelines turning company-wide Kafka streams into schema-driven Iceberg/S3 datasets at <strong>hundreds of millions of events/day</strong>.</li>
+                        <li>Architected and built the company's <strong>first end-to-end data validation framework</strong>, catching data issues before customers; <strong>adopted by 3 teams</strong>.</li>
+                        <li>Scaled fault-tolerant Java/Kafka microservices to <strong>10M+ events/day</strong>, cutting latency <strong>25%</strong>.</li>
+                        <li>Engineered customer-facing REST APIs at <strong>5K+ RPS</strong> with Redis cache sharding, <strong>halving DB load</strong>.</li>
+                        <li>Stood up org-wide integration testing <strong>0&rarr;1</strong> (LocalStack/AWS), cutting test creation to <strong>&lt;1 min</strong> for <strong>5+ teams</strong>.</li>
+                        <li>Delivered <strong>99.99% uptime</strong> via multi-region deployment and circuit breakers (Resilience4j).</li>
+                        <li>Drove <strong>10+ customer-facing features</strong> with Product and QA, growing daily active users <strong>25%</strong>.</li>
+                        <li>Mentored a junior engineer (halved onboarding) and held a <strong>15-min P0/P1 SLA</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tl-item reveal">
+                <div class="tl-dot tl-dot--past"></div>
+                <div class="tl-body">
+                    <div class="tl-head">
+                        <div class="tl-titles">
+                            <h3 class="tl-role">Software Engineer</h3>
+                            <div class="tl-co"><a href="https://codingmind.com" target="_blank" data-ev="company-codingminds" data-ev-source="experience">Coding Minds, Inc</a> · Ed-Tech Platform</div>
+                        </div>
+                        <div class="tl-period">Jul 2020 · Feb 2021</div>
+                    </div>
+                    <ul class="tl-bullets">
+                        <li>Developed academic system (React/Java/Node.js) deployed on Heroku, serving <strong>500+ daily active users</strong>.</li>
+                        <li>Built RESTful APIs (Java/Spring) with MySQL CRUD operations, achieving <strong>95% test coverage</strong>.</li>
+                        <li>Led full SDLC from requirements to deployment using Agile/Scrum, delivering <strong>3 major releases</strong>.</li>
+                        <li>Enhanced React performance via memoization and lazy loading, improving page load speed by <strong>30%</strong>.</li>
+                        <li>Implemented automated testing, catching <strong>20+ critical bugs</strong> pre-production.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= PROJECTS ======= -->
+<section id="projects" class="projects">
+    <div class="si">
+        <h2 class="stitle reveal">Selected Projects</h2>
+
+        <div class="fp reveal">
+            <div class="fp-body">
+                <div class="fp-eye"><i class="fas fa-star"></i> Featured Project</div>
+                <h3 class="fp-title">
+                    <a href="https://github.com/spoorthibasu/kafka-flink-schema-consolidation" target="_blank" data-ev="project-schema-consolidation">Kafka Flink Schema Consolidation</a>
+                </h3>
+                <p class="fp-desc">Reference implementation for discriminator-based schema consolidation in Kafka and Flink pipelines. Collapses twelve schemas into one consolidated Avro record, enabling single filtered queries over Apache Iceberg on S3. Companion to the InfoQ article on schema proliferation.</p>
+                <div class="fp-tags">
+                    <span>Apache Flink</span><span>Apache Kafka</span><span>Apache Iceberg</span><span>Avro</span><span>Java</span>
+                </div>
+                <div class="fp-links">
+                    <a href="https://github.com/spoorthibasu/kafka-flink-schema-consolidation" target="_blank" data-ev="project-schema-consolidation" class="fp-gh"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="featured" class="fp-art"><i class="fas fa-book-open"></i> InfoQ Article</a>
+                </div>
+            </div>
+            <div class="fp-code">
+                <div class="code-bar">
+                    <div class="code-dots"><span class="cr"></span><span class="cy"></span><span class="cg"></span></div>
+                    <span class="code-file">ConsolidatedRide.avsc</span>
+                </div>
+                <pre class="code-pre"><code><span class="t-c">// Discriminator-based union field</span>
+{
+  <span class="t-k">"name"</span>: <span class="t-s">"standardRideAttributes"</span>,
+  <span class="t-k">"type"</span>: [<span class="t-ty">"null"</span>, {
+    <span class="t-k">"type"</span>: <span class="t-ty">"record"</span>,
+    <span class="t-k">"name"</span>: <span class="t-cn">"StandardRideAttributes"</span>,
+    <span class="t-k">"fields"</span>: [
+      { <span class="t-k">"name"</span>: <span class="t-s">"vehicleClass"</span>,
+        <span class="t-k">"type"</span>: <span class="t-ty">"string"</span> },
+      { <span class="t-k">"name"</span>: <span class="t-s">"surgeMultiplier"</span>,
+        <span class="t-k">"type"</span>: <span class="t-ty">"double"</span> }
+    ]
+  }],
+  <span class="t-k">"default"</span>: <span class="t-ty">null</span>
+}</code></pre>
+            </div>
+        </div>
+
+        <div class="proj-grid">
+            <div class="proj-card reveal">
+                <div class="pc-top">
+                    <i class="fas fa-folder-open pc-ico"></i>
+                    <a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail" class="pc-ext"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <h3 class="pc-title"><a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail">Kafka Flink Audit Trail</a></h3>
+                <p class="pc-desc">Flink pipeline writing profile change events to an append-only Iceberg table. Historical state reconstructed at query time via SQL window functions.</p>
+                <div class="pc-tags"><span>Flink</span><span>Kafka</span><span>Iceberg</span><span>SQL</span></div>
+            </div>
+            <div class="proj-card reveal">
+                <div class="pc-top">
+                    <i class="fas fa-folder-open pc-ico"></i>
+                    <a href="https://github.com/spoorthibasu/Automated-Clinical-System-for-General-Check-ups" target="_blank" data-ev="project-health-web" class="pc-ext"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <h3 class="pc-title"><a href="https://github.com/spoorthibasu/Automated-Clinical-System-for-General-Check-ups" target="_blank" data-ev="project-health-web">Health Web</a></h3>
+                <p class="pc-desc">Clinic website deployed on AWS enabling patients to find nearby doctors and book appointments. Java backend with MySQL via JDBC.</p>
+                <div class="pc-tags"><span>Java</span><span>JSP</span><span>MySQL</span><span>AWS</span></div>
+            </div>
+            <div class="proj-card reveal">
+                <div class="pc-top">
+                    <i class="fas fa-folder-open pc-ico"></i>
+                    <a href="https://github.com/spoorthibasu/Ecommerce-Order-Processing" target="_blank" data-ev="project-ecommerce" class="pc-ext"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <h3 class="pc-title"><a href="https://github.com/spoorthibasu/Ecommerce-Order-Processing" target="_blank" data-ev="project-ecommerce">Ecommerce Order Processing</a></h3>
+                <p class="pc-desc">Order microservices using Spring Boot and JPA with PostgreSQL. Swagger docs, Docker containerized, Log4j logging.</p>
+                <div class="pc-tags"><span>Spring Boot</span><span>PostgreSQL</span><span>Docker</span></div>
+            </div>
+            <div class="proj-card reveal">
+                <div class="pc-top">
+                    <i class="fas fa-folder-open pc-ico"></i>
+                    <a href="https://github.com/spoorthibasu/Hair-and-Skin-Segmentation" target="_blank" data-ev="project-segmentation" class="pc-ext"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <h3 class="pc-title"><a href="https://github.com/spoorthibasu/Hair-and-Skin-Segmentation" target="_blank" data-ev="project-segmentation">Hair &amp; Skin Segmentation</a></h3>
+                <p class="pc-desc">Deep autoencoder using U-NET for hair/skin segmentation with Keras, tested on Celeb-A dataset with data augmentation and transfer learning.</p>
+                <div class="pc-tags"><span>Keras</span><span>U-NET</span><span>NumPy</span></div>
+            </div>
+            <div class="proj-card reveal">
+                <div class="pc-top"><i class="fas fa-folder-open pc-ico"></i></div>
+                <h3 class="pc-title">Safe Driving: Collision Prevention</h3>
+                <p class="pc-desc">Demo vehicle using Renesas Microcontroller with ultrasonic sensors. Proximity alerts via CubeSuite++, with AWS storing messages to nearby vehicles.</p>
+                <div class="pc-tags"><span>Embedded C</span><span>Renesas</span><span>AWS</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= CREDENTIALS ======= -->
+<section id="credentials" class="credentials">
+    <div class="si">
+        <h2 class="stitle reveal">Education &amp; Credentials</h2>
+        <div class="cred-grid">
+            <div class="cred-card cred-card--fill reveal">
+                <div class="cred-ico"><i class="fas fa-graduation-cap"></i></div>
+                <h3 class="cred-head">Education</h3>
+                <div class="cred-row">
+                    <div class="cred-deg">M.S. in Computer Science</div>
+                    <div class="cred-school">Cal Poly Pomona</div>
+                    <div class="cred-meta">2018 &ndash; 2020 &middot; GPA 3.66</div>
+                </div>
+                <div class="cred-row">
+                    <div class="cred-deg">B.S. in Computer Science</div>
+                    <div class="cred-school">Dr. Ambedkar Institute of Technology</div>
+                    <div class="cred-meta">2014 &ndash; 2018 &middot; GPA 4.0</div>
+                </div>
+            </div>
+            <div class="cred-card reveal">
+                <div class="cred-ico"><i class="fas fa-book-open"></i></div>
+                <h3 class="cred-head">Publication</h3>
+                <div class="cred-row">
+                    <div class="cred-deg">Schema Proliferation in Kafka and Flink Pipelines</div>
+                    <div class="cred-school">InfoQ &middot; 2026</div>
+                    <p class="cred-desc">Explores schema proliferation in event-driven systems and presents a discriminator-based consolidation approach for scalable Kafka and Flink pipelines.</p>
+                    <ul class="cred-hl">
+                        <li><i class="fas fa-trophy"></i><span><strong>#1 Top Article</strong> in InfoQ's weekly Round-Up</span></li>
+                        <li><i class="fas fa-eye"></i><span><strong>550K+</strong> monthly readers</span></li>
+                        <li><i class="fas fa-user-check"></i><span>Peer-reviewed</span></li>
+                    </ul>
+                    <a class="cred-link" href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="credentials">Read on InfoQ <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="cred-card reveal">
+                <div class="cred-ico"><i class="fas fa-code-branch"></i></div>
+                <h3 class="cred-head">Open Source</h3>
+                <div class="cred-row">
+                    <div class="cred-deg">Apache Flink CDC Contributor</div>
+                    <div class="cred-school">apache/flink-cdc &middot; 2026</div>
+                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes. Also fixed a JobManager OOM on large MySQL CDC tables caused by retained snapshot-split metadata.</p>
+                    <ul class="cred-hl">
+                        <li><i class="fas fa-check-circle"></i><span>Merged, shipping in <strong>Flink CDC 3.7</strong></span></li>
+                        <li><i class="fas fa-stream"></i><span>Streaming-data internals</span></li>
+                        <li><i class="fas fa-user-check"></i><span>Reviewed by a committer</span></li>
+                    </ul>
+                    <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= SKILLS ======= -->
+<section id="skills" class="skills">
+    <div class="si">
+        <h2 class="stitle reveal">Skills &amp; Technologies</h2>
+        <div class="skills-grid">
+            <div class="skill-cat reveal">
+                <h4 class="scat-title">Streaming &amp; Data</h4>
+                <div class="badge-row">
+                    <span class="badge">Apache Kafka</span>
+                    <span class="badge">Apache Flink</span>
+                    <span class="badge">Apache Iceberg</span>
+                    <span class="badge">Avro</span>
+                    <span class="badge">Schema Registry</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal">
+                <h4 class="scat-title">Languages</h4>
+                <div class="badge-row">
+                    <span class="badge">Java</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">SQL</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal">
+                <h4 class="scat-title">Cloud &amp; Infrastructure</h4>
+                <div class="badge-row">
+                    <span class="badge">AWS</span>
+                    <span class="badge">Docker</span>
+                    <span class="badge">Terraform</span>
+                    <span class="badge">Kubernetes</span>
+                    <span class="badge">CI/CD</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal">
+                <h4 class="scat-title">Frameworks</h4>
+                <div class="badge-row">
+                    <span class="badge">Spring Boot</span>
+                    <span class="badge">Spring Cloud</span>
+                    <span class="badge">React</span>
+                    <span class="badge">gRPC</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal">
+                <h4 class="scat-title">Databases &amp; Caching</h4>
+                <div class="badge-row">
+                    <span class="badge">DynamoDB</span>
+                    <span class="badge">Redis</span>
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">MySQL</span>
+                    <span class="badge">S3</span>
+                </div>
+            </div>
+            <div class="skill-cat reveal">
+                <h4 class="scat-title">Testing &amp; Observability</h4>
+                <div class="badge-row">
+                    <span class="badge">JUnit 5</span>
+                    <span class="badge">Mockito</span>
+                    <span class="badge">Testcontainers</span>
+                    <span class="badge">LocalStack</span>
+                    <span class="badge">Sumo Logic</span>
+                    <span class="badge">New Relic</span>
+                    <span class="badge">Prometheus</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= ACTIVITY ======= -->
+<section class="activity">
+    <div class="si">
+        <h2 class="stitle reveal">Professional Activity</h2>
+        <div class="act-grid">
+            <div class="act-card reveal">
+                <div class="act-ico"><i class="fas fa-microphone-alt"></i></div>
+                <h4 class="act-title">Presenter: Keys to Success</h4>
+                <p class="act-org">Cal Poly Pomona Graduate Student Welcome</p>
+                <ul class="act-list">
+                    <li>Gave a talk to 50+ students on my journey in Computer Science</li>
+                    <li>Addressed the transition from undergraduate to graduate school</li>
                 </ul>
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="https://mail.google.com/mail/?view=cm&fs=1&to=spoorthibasu@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>
-        </div><!--//container-->
-    </header><!--//header-->
+                <a class="act-link" href="https://www.cpp.edu/gradstudies/index.shtml" target="_blank" data-ev="activity-cpp">Cal Poly Pomona <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="act-card reveal">
+                <div class="act-ico"><i class="fas fa-gavel"></i></div>
+                <h4 class="act-title">Judge, Game Gala 2021</h4>
+                <p class="act-org">Coding Competition for Gamers</p>
+                <ul class="act-list">
+                    <li>Evaluated 20+ K-12 developers on digital game projects</li>
+                    <li>Provided feedback on code quality and game performance</li>
+                    <li>Participated in selecting the competition winner</li>
+                </ul>
+                <a class="act-link" href="http://gamegala.org/" target="_blank" data-ev="activity-gamegala">Game Gala 2021 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>I’m a Software Engineer with a Master’s in Computer Science and over 4 years of experience specializing in building and scaling high-availability, fault-tolerant distributed systems. I leverage a strong academic foundation and hands-on industry experience to design and deliver reliable backend solutions in Java, microservices, and event-driven architectures.
-                                </p>
-                                <div class="item">
-                                  <h5 class="title">Core Expertise</h5>
-                                  <ul>
-                                    <li><span style="color:#545e69; font-weight:900;">Scalable Systems:</span> Scaled Java and Kafka microservices to handle 10M+ events daily, reducing latency by 25%.</li>
-                                    <li><span style="color:#545e69; font-weight:900;">High Performance APIs:</span> Engineered REST APIs serving 5K+ RPS using Spring Boot and Redis, cutting database load by 50%.</li>
-                                    <li><span style="color:#545e69; font-weight:900;">Reliability and DevOps:</span> Achieved 99.99% uptime through multi region deployment and built organization wide testing frameworks from the ground up.</li>
-                                    <li><span style="color:#545e69; font-weight:900;">End to End Ownership:</span> Led features from concept to deployment, driving a 25% increase in daily active users.</li>
-                                  </ul>
-                                </div>
-                            <p>I’m passionate about system design, distributed systems, and building robust platforms with modern cloud technologies. I enjoy mentoring engineers, optimizing performance, and driving impact through thoughtful engineering.
-                            </p>
-                            <p><span style="color:#545e69; font-weight:900;">Technologies:</span> Java, Spring Boot, Apache Kafka, Redis, AWS, Docker, Terraform, CI/CD</p>
-                            <h6 class="title">Open to new opportunities and relocation.</h6>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div>
+            <div class="footer-name">Spoorthi Basu</div>
+            <div class="footer-sub">Software Engineer · Distributed Systems · Real-Time Data Infrastructure</div>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/spoorthibasu" target="_blank" aria-label="LinkedIn" data-ev="outbound-linkedin" data-ev-source="footer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/spoorthibasu" target="_blank" aria-label="GitHub" data-ev="outbound-github" data-ev-source="footer"><i class="fab fa-github-alt"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=spoorthibasu@gmail.com" target="_blank" aria-label="Email" data-ev="contact-email" data-ev-source="footer"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
 
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                               <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="https://www.genesys.com" target="_blank">Genesys</a></span> <span class="year">(March 2021 - Present)</span></h3>
-                                <ul>
-                                  <li>Scaled fault-tolerant Java/Kafka microservices to 10M+/day via partitioning/rebalancing, cutting latency by 25%.</li> 
-                                  <li>Engineered 5K+ RPS REST APIs (Spring Boot/Redis) with cache sharding, reducing DB load by 50%.</li> 
-                                  <li>Built org-wide integration testing 0→1 (LocalStack/AWS mocking), automating test creation to <1min for 5+ teams.</li> 
-                                  <li>Delivered 99.99% uptime through multi-region deployment and circuit breakers (Resilience4j) for fault isolation.</li> 
-                                  <li>Collaborated cross-functionally with Product and QA to deliver 10+ features, increasing daily active users by 25%.</li> 
-                                  <li>Mentored junior engineer on distributed systems, halving onboarding time while maintaining 15-min P0/P1 SLA.</li>
-                                </ul>
-                                <p><a class="more-link" href="https://www.genesys.com" target="_blank"><i class="fas fa-external-link-alt"></i>Genesys Website</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="https://codingmindsacademy.com" target="_blank">Coding Minds, Inc</a></span> <span class="year">(July 2020 - February 2021)</span></h3>
-                                <ul>
-                                  <li>Designed and developede the academic management system using web service technologies.</li>
-                                  <li>Performde requirement analysis, design, development and deployment in an Agile environment utilizing Scrum.</li>
-                                  <li>Developed RESTful services using Java and performed CRUD operations on MySQL database.</li>
-                                  <li>Performed testing using dev tools, SWAGGER and performedd operations on full-stack web services with MySQL.</li>
-                                  <li>Utilize React for frontend and Java for backend development and deploying the application with Heroku.</li>
-                                </ul>
-                                <p><a class="more-link" href="https://codingmindsacademy.com" target="_blank"><i class="fas fa-external-link-alt"></i>Coding Minds Website</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="https://www.cpp.edu" target="_blank">California State Polytechnic University Pomona</a></span> <span class="year">(February 2019 - May 2020)</span></h3>
-                                <ul>
-                                  <li>Designed and developed University website by adding new features using Java, JavaScript, CSS, HTML, React, MySQL, AWS, GIT resulting in 50% increase in website views.</li>
-                                  <li>Created and deployed a module for efficient onboarding of graduate students with features such as registration, authentication, onboarding, curriculum development, and self-service tools.</li>
-                                  <li>Executed database management using MySQL, version control with GIT, and deployed on AWS.</li>
-                                  <li>Performed regular testing, deployment, and bug fix in an agile development environment by actively gathering feedback and continuously improving the features to satisfy customer needs.</li>
-                                </ul>
-                                <p><a class="more-link" href="https://www.cpp.edu" target="_blank"><i class="fas fa-external-link-alt"></i>California State Plytechnic University Website.</a></p>
-                            </div><!--//item-->
-                          </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
+<script src="assets/plugins/jquery-3.4.1.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+(function() {
+    // Hamburger menu
+    var navEl = document.getElementById('nav');
+    var hamburger = document.getElementById('nav-hamburger');
+    var mobileMenu = document.getElementById('nav-mobile-menu');
+    if (hamburger) {
+        hamburger.addEventListener('click', function() {
+            navEl.classList.toggle('nav-open');
+        });
+        mobileMenu.querySelectorAll('a').forEach(function(a) {
+            a.addEventListener('click', function() { navEl.classList.remove('nav-open'); });
+        });
+    }
 
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">
+    // Scroll progress bar
+    var prog = document.getElementById('nav-progress');
+    function updateProgress() {
+        var pct = Math.max(2, window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100);
+        prog.style.setProperty('--scroll', pct + '%');
+    }
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('load', updateProgress);
 
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://github.com/spoorthibasu/Automated-Clinical-System-for-General-Check-ups" target="_blank">Health Web</a></h3>
-                                <p class="summary">Automated Clinical System for health check-ups </p>
-                                <div class="featured-image ">
-                                    <a href="https://github.com/spoorthibasu/Automated-Clinical-System-for-General-Check-ups" target="_blank">
-                                    <img class="img-fluid project-image" src="assets/images/projects/health web.jpg" alt="Health Web" />
-                                    </a>
-                                    <!-- <div class="ribbon">
-                                        <div class="text">New</div>
-                                    </div> -->
-                                </div>
+    // Scroll reveal via IntersectionObserver
+    if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in-view');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+    } else {
+        document.querySelectorAll('.reveal').forEach(function(el) {
+            el.classList.add('in-view');
+        });
+    }
+})();
+</script>
+<script>
+    (function () {
+        if (!('IntersectionObserver' in window)) return;
+        var ids = ['hero', 'metrics', 'about', 'experience', 'projects', 'credentials', 'skills'];
+        var seen = {};
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting && !seen[entry.target.id]) {
+                    seen[entry.target.id] = true;
+                    if (window.umami) umami.track('section-' + entry.target.id);
+                }
+            });
+        }, { rootMargin: '0px 0px -25% 0px' });
+        ids.forEach(function (id) {
+            var el = document.getElementById(id);
+            if (el) obs.observe(el);
+        });
+    })();
 
-                                <div class="desc text-left">
-                                    <p>Conceptualized, designed, developed and deployed the website on AWS for a clinic, which enabled the patients to view doctors near-by based on their pin code and take appointments, developed using JavaScript, HTML, CSS, JSP for the front end and Java for the back end. Established connection to MySQL through JDBC which was used to store the doctor and patient records.</p>
-                                    <p><span><a class="more-link" href="https://github.com/spoorthibasu/Automated-Clinical-System-for-General-Check-ups" target="_blank"><i class="fas fa-external-link-alt"></i>Github Link</a></span></p>
-                                </div><!--//desc-->
-                              </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://github.com/spoorthibasu/Ecommerce-Order-Processing" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/Ecommerce Order Processing.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/spoorthibasu/Ecommerce-Order-Processing" target="_blank">Ecommerce Order Processing</a></h3>
-                                    <p class="mb-2">Developed order microservices using Spring Boot, Spring JPA, Spring IOC, Spring MVC. Designed new schema with PostgreSQL that followed Normalization. Used Swagger to document endpoints, along with using appropriate HTTP and status codes. Containerized the services using Docker. Used Log4j for logging and tracing java code.</p>
-                                    <p><a class="more-link" href="https://github.com/spoorthibasu/Ecommerce-Order-Processing" target="_blank"><i class="fas fa-external-link-alt"></i>Github Link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://github.com/spoorthibasu/Image-Processing-App" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/imgprocessing.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/spoorthibasu/Image-Processing-App" target="_blank">Image Processing App</a></h3>
-                                    <p class="mb-2"> Developed a Java application using Java for image processing using various techniques. Implemented various functionalities for performing, Histogram equalization, zoom-in, zoom-out, Spatial Filtering Restoration, Spatial Filtering Smoothing and Image Compression. Image compression techniques include RLE, Huffman encoding and decoding, LZW encoding and decoding.</p>
-                                    <p><a class="more-link" href="https://github.com/spoorthibasu/Image-Processing-App" target="_blank"><i class="fas fa-external-link-alt"></i>Github Link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
+    (function () {
+        var marks = [25, 50, 75, 100];
+        var fired = {};
+        function onScroll() {
+            var doc = document.documentElement;
+            var scrollable = doc.scrollHeight - window.innerHeight;
+            if (scrollable <= 0) return;
+            var pct = ((window.scrollY || doc.scrollTop) / scrollable) * 100;
+            marks.forEach(function (m) {
+                if (pct >= m && !fired[m]) {
+                    fired[m] = true;
+                    if (window.umami) umami.track('scroll-' + m);
+                }
+            });
+            if (fired[100]) window.removeEventListener('scroll', onScroll);
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+    })();
 
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://github.com/spoorthibasu/Hair-and-Skin-Segmentation" target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/Hair_skin_segmentation.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/spoorthibasu/Hair-and-Skin-Segmentation" target="_blank">Hair and Skin Segmentation using Machine Learning</a></h3>
-                                    <p class="mb-2">A machine learning project for Hair and Skin Segmentation using deep autoencoder. Developed deep autoencoder using U-NET model for hair and skin segmentation using Keras. Tested the U-NET model on Celeb-A dataset. Practised data augmentation and transfer learning on the built model. Used libraries such as keras, numpy, sklearn.</p>
-                                    <p><a class="more-link" href="https://github.com/spoorthibasu/Hair-and-Skin-Segmentation" target="_blank"><i class="fas fa-external-link-alt"></i>Github Link</a></p>
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                             <div class="item row">
-                                <a class="col-md-4 col-12"  target="_blank">
-                                <img class="img-fluid project-image" src="assets/images/projects/rear-end-collision.jpeg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a  target="_blank">Safe Driving to Avoid Rear End Collision</a></h3>
-                                    <p class="mb-2">Designed and developed the demo vehicle using Renesas Microcontroller, installed it with front and back ultrasonic obstacle sensors which sent a message to the front and back vehicle if they came in very close proximity to the demo vehicle. Implemented the message sending through CubeSuite ++ and Renesas Flash Programmer for writing the program onto the Renesas Microcontroller. Utilized mobiles, as vehicles following the demo vehicle with AWS storing a copy of messages sent to them.</p>
-                                  <!--  <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>-->
-                                </div><!--//desc-->
-                            </div><!--//item-->
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </section><!--//section-->
-
-                <!-- <section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
-                        <div id="github-graph" class="github-graph">
-                        </div><!--//github-graph-->
-
-                    <!--    <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.
-                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
-                      <!--  <div id="ghfeed" class="ghfeed">
-                        </div><!--//ghfeed-->
-
-                  <!--  </div><!--//secton-inner-->
-              <!--  </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Indianapolis, Indiana, USA</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=spoorthibasu@gmail.com" target="_blank">spoorthibasu@gmail.com</a></li>
-                                <li><i class="fas fa-file"></i><span class="sr-only">Resume:</span><a href="assets/images/Spoorthi_Basu_Resume.pdf" target="_blank">Resume</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//aside-->
-                
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Master's in Computer Science</h3>
-                                <h3 class="title"><i class="fas fa-award"></i> GPA: 3.66</h3>
-                                <h4 class="university">California State Polytechnic University Pomona <span class="year">(August 2018 - May 2020)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Bachelor's in Computer Science</h3>
-                                <h3 class="title"><i class="fas fa-award"></i> GPA: 4.0</h3>
-                                <h4 class="university">Dr. Ambedkar Institute of Technology <br><span class="year">(August 2014- May 2018)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                          <!--  <p class="intro">
-                                Development Skills</p>-->
-
-                            <div class="skillset">
-
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Spring Boot<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Distributed Systems<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">AWS (EC2, S3, Lambda, DynamoDB)<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">RESTful API Design<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Microservices Architecture<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">MySQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Kafka<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Docker<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">JUnit / Mockito / Testcontainers<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">CI/CD & Automation Tools<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>
-                                    </div><!--//level-bar-->
-                                </div><!--//item-->
-
-                                <p><a class="more-link" href="https://www.linkedin.com/in/spoorthibasu" target="_blank"><i class="fas fa-external-link-alt"></i>More on LinkedIn</a></p>
-                            </div>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">
-                                    <p><i class="fas fa-quote-left"></i>As our department is now navigating the challenges of working through this COVID-19 pandemic, Spoorthi has remained a constant support for our department, agreeing to work remotely from home while finishing her academic studies. She has been instrumental in developing and deploying our website to communicate our new remote operations and guidelines for departments and students. She has also used her creative talents to identify and publish graduate student success stories to our campus...</p>
-                                </blockquote>
-                                <p class="source"><span class="name">Rebecca Rivas</span><br /><span class="title">Graduate Studies Analyst at Cal Poly Pomona</span></p>
-                            </div><!--//item-->
-
-                           <p><a class="more-link" href="https://www.linkedin.com/in/spoorthibasu" target="_blank"><i class="fas fa-external-link-alt"></i>More on Linkedin</a></p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Bilingual<br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Kannada:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <!-- <aside class="blog aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <p>You can use Sascha Depold's <a href="https://github.com/sdepold/jquery-rss" target="_blank">jQuery RSS plugin</a> to pull in your blog post feeds.</p>
-                        <div id="rss-feeds" class="content">
-                        </div><!--//content-->
-              <!--      </div><!--//section-inner-->
-              <!--  </aside><!--//section-->
-
-            <!--    <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Favourite coding music</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
-                            </ul>
-                        </div><!--//content-->
-                <!--    </div><!--//section-inner-->
-              <!--  </aside><!--//section-->
-
-                <aside class="list conferences aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Professional Activity</h2>
-                        <p><b>Presenter at Keys to Success: Perspectives from Faculty and Graduate Students</b></p>
-                        <div class="content">
-                            <ul>
-                                <li>Gave a talk to over 50 students regarding my journey in Computer Science</li>
-                                <li>Addressed students regarding the transition to graduate school</li>
-                            </ul>
-                            <p><a class="more-link" href="https://www.cpp.edu/gradstudies/cal-poly-pomona-new-graduate-student-welcome-event.shtml" target="_blank"><i class="fas fa-external-link-alt"></i>Cal Poly Pomona New Graduate Student Welcome Event</a></p>
-                        </div><!--//content-->
-                        <p><b>Judge at Game Gala 2021 (Coding Competition for Gamers)</b></p>
-                        <div class="content">
-                            <ul>
-                                <li>Evaluated over 20, K-12 game developers for thier digital game projects</li>
-                                <li>Gave constructive feedback for the improvement of code and game performance</li>
-                                <li>Participated in selecting the winner of the competition</li>
-                            </ul>
-                            <p><a class="more-link" href="http://gamegala.org/" target="_blank"><i class="fas fa-external-link-alt"></i>Game Gala 2021</a></p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-            </div><!--//secondary-->
-        </div><!--//row-->
-    </div><!--//masonry-->
-
-    <!-- ******FOOTER****** -->
-
-    <!-- Javascript -->
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    (function () {
+        document.addEventListener('click', function (e) {
+            var t = e.target;
+            if (!t || !t.closest) return;
+            var el = t.closest('[data-ev]');
+            if (!el || !window.umami) return;
+            var data = {};
+            for (var i = 0; i < el.attributes.length; i++) {
+                var a = el.attributes[i];
+                if (a.name.indexOf('data-ev-') === 0) data[a.name.slice(8)] = a.value;
+            }
+            umami.track(el.getAttribute('data-ev'), data);
+        }, true);
+    })();
+</script>
 </body>
 </html>
