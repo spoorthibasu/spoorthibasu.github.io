@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <script defer src="assets/fontawesome/js/all.js"></script>
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=2">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=10">
     <meta property="og:title" content="Spoorthi Basu">
     <meta name="image" property="og:image" content="https://spoorthibasu.github.io/assets/images/spoorthi_basu.jpg">
     <meta property="og:description" content="Spoorthi Basu, Software Engineer">
@@ -26,9 +26,9 @@
         </button>
         <ul class="nav-links">
             <li><a href="#about" data-ev="nav-click" data-ev-target="about">About</a></li>
+            <li><a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Speaking</a></li>
             <li><a href="#experience" data-ev="nav-click" data-ev-target="experience">Experience</a></li>
             <li><a href="#projects" data-ev="nav-click" data-ev-target="projects">Projects</a></li>
-            <li><a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Credentials</a></li>
             <li><a href="#skills" data-ev="nav-click" data-ev-target="skills">Skills</a></li>
         </ul>
         <div class="nav-end">
@@ -38,9 +38,9 @@
     </div>
     <nav class="nav-mobile-menu" id="nav-mobile-menu">
         <a href="#about" data-ev="nav-click" data-ev-target="about">About</a>
+        <a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Speaking</a>
         <a href="#experience" data-ev="nav-click" data-ev-target="experience">Experience</a>
         <a href="#projects" data-ev="nav-click" data-ev-target="projects">Projects</a>
-        <a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Credentials</a>
         <a href="#skills" data-ev="nav-click" data-ev-target="skills">Skills</a>
     </nav>
     <div class="nav-progress" id="nav-progress"></div>
@@ -64,6 +64,7 @@
             <p class="hero-role">Software Engineer · Distributed Systems · Real-Time Data Infrastructure</p>
             <p class="hero-tagline">I build distributed systems that move data at scale. Real-time pipelines, high-throughput APIs, and the infrastructure that keeps them reliable.</p>
             <div class="hero-signals">
+                <a href="#credentials" data-ev="talk-dss-2026" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fas fa-microphone-alt"></i> Speaker &middot; Data Streaming Summit 2026</a>
                 <a href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fas fa-book-open"></i> InfoQ Published Author</a>
                 <a href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fab fa-github"></i> Apache Flink CDC Contributor</a>
                 <a href="#experience" data-ev="hero-metric-events" class="hero-signal hero-signal--link"><i class="fas fa-server"></i> 100M+ Events / Day</a>
@@ -158,7 +159,7 @@
             <div class="about-bio reveal">
                 <p>I'm a Software Engineer with 5+ years building the infrastructure that makes data move: reliably, at scale, and in real time. At Genesys, I've engineered systems processing hundreds of millions of events per day, APIs that handle 5K+ requests per second, and testing infrastructure that went from zero to production-grade in weeks.</p>
                 <p>My work spans the full data path, from Kafka topics and Flink jobs to Iceberg tables and the REST APIs that serve data to end users. I care deeply about correctness, fault tolerance, and the operational rigor that makes systems boring, which is exactly what production needs.</p>
-                <p>I recently built the company's first end-to-end data validation framework, now adopted across three teams. I've also published in InfoQ on schema proliferation in Kafka and Flink pipelines, and I'm an active contributor to Apache Flink CDC.</p>
+                <p>I recently built the company's first end-to-end data validation framework, now adopted across three teams. I've also published in InfoQ on schema proliferation in Kafka and Flink pipelines, and I'm an active contributor to Apache Flink CDC. This October I'll be speaking at Data Streaming Summit 2026 in San Francisco on why the pipelines behind AI agent memory fail silently.</p>
             </div>
             <div class="about-aside reveal">
                 <div class="aside-card">
@@ -176,6 +177,79 @@
                         <span>Apache Iceberg</span><span>AWS</span><span>Redis</span>
                         <span>Spring Boot</span><span>Docker</span><span>Terraform</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======= CREDENTIALS ======= -->
+<section id="credentials" class="credentials">
+    <div class="si">
+        <h2 class="stitle reveal">Speaking &amp; Credentials</h2>
+
+        <div class="speak-feature reveal">
+            <div class="speak-ico"><i class="fas fa-microphone-alt"></i></div>
+            <div class="speak-body">
+                <div class="speak-eye">Upcoming Talk <span class="speak-pill">Accepted</span></div>
+                <h3 class="speak-title">Your Agent&rsquo;s Memory Is Only as Good as the Pipeline Behind It</h3>
+                <div class="speak-meta">
+                    <span><i class="fas fa-bullhorn"></i> Data Streaming Summit 2026</span>
+                    <span><i class="fas fa-calendar-alt"></i> Oct 7&ndash;8, 2026</span>
+                    <span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+                </div>
+                <p class="speak-desc">I don&rsquo;t build agents. I build the pipelines that feed them. Durable memory and continuous context are CDC problems wearing new clothes. Kafka into a vector store, Flink into a lakehouse, a change log materialized into something an agent reads. That path breaks without ever tripping an alarm. Exactly-once is a guarantee about processing, not about what ends up in your table. An agent doesn&rsquo;t crash on wrong memory. It answers confidently, and you never trace it back.</p>
+                <ul class="cred-hl">
+                    <li><i class="fas fa-check-circle"></i><span>Selected through the open <strong>Call for Proposals</strong></span></li>
+                    <li><i class="fas fa-clipboard-check"></i><span>Correctness checks across <strong>Kafka, Flink, and Iceberg</strong></span></li>
+                </ul>
+                <a class="cred-link" href="https://datastreaming-summit.org/" target="_blank" data-ev="talk-dss-2026" data-ev-source="credentials">Data Streaming Summit <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="cred-grid">
+            <div class="cred-card cred-card--fill reveal">
+                <div class="cred-ico"><i class="fas fa-graduation-cap"></i></div>
+                <h3 class="cred-head">Education</h3>
+                <div class="cred-row">
+                    <div class="cred-deg">M.S. in Computer Science</div>
+                    <div class="cred-school">Cal Poly Pomona</div>
+                    <div class="cred-meta">2018 &ndash; 2020 &middot; GPA 3.66</div>
+                </div>
+                <div class="cred-row">
+                    <div class="cred-deg">B.S. in Computer Science</div>
+                    <div class="cred-school">Dr. Ambedkar Institute of Technology</div>
+                    <div class="cred-meta">2014 &ndash; 2018 &middot; GPA 4.0</div>
+                </div>
+            </div>
+            <div class="cred-card reveal">
+                <div class="cred-ico"><i class="fas fa-book-open"></i></div>
+                <h3 class="cred-head">Publication</h3>
+                <div class="cred-row">
+                    <div class="cred-deg">Schema Proliferation in Kafka and Flink Pipelines</div>
+                    <div class="cred-school">InfoQ &middot; 2026</div>
+                    <p class="cred-desc">Explores schema proliferation in event-driven systems and presents a discriminator-based consolidation approach for scalable Kafka and Flink pipelines.</p>
+                    <ul class="cred-hl">
+                        <li><i class="fas fa-trophy"></i><span><strong>#1 Top Article</strong> in InfoQ's weekly Round-Up</span></li>
+                        <li><i class="fas fa-eye"></i><span><strong>550K+</strong> monthly readers</span></li>
+                        <li><i class="fas fa-user-check"></i><span>Peer-reviewed</span></li>
+                    </ul>
+                    <a class="cred-link" href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="credentials">Read on InfoQ <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="cred-card reveal">
+                <div class="cred-ico"><i class="fas fa-code-branch"></i></div>
+                <h3 class="cred-head">Open Source</h3>
+                <div class="cred-row">
+                    <div class="cred-deg">Apache Flink CDC Contributor</div>
+                    <div class="cred-school">apache/flink-cdc &middot; 2026</div>
+                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes. Also fixed a JobManager OOM on large MySQL CDC tables caused by retained snapshot-split metadata.</p>
+                    <ul class="cred-hl">
+                        <li><i class="fas fa-check-circle"></i><span>Merged, shipping in <strong>Flink CDC 3.7</strong></span></li>
+                        <li><i class="fas fa-stream"></i><span>Streaming-data internals</span></li>
+                        <li><i class="fas fa-user-check"></i><span>Reviewed by a committer</span></li>
+                    </ul>
+                    <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -240,6 +314,7 @@
     <div class="si">
         <h2 class="stitle reveal">Selected Projects</h2>
 
+        <div class="fp-duo">
         <div class="fp reveal">
             <div class="fp-body">
                 <div class="fp-eye"><i class="fas fa-star"></i> Featured Project</div>
@@ -278,6 +353,48 @@
             </div>
         </div>
 
+        <div class="fp fp--flip reveal">
+            <div class="fp-body">
+                <div class="fp-eye"><i class="fas fa-flask"></i> Research Artifact</div>
+                <h3 class="fp-title">
+                    <a href="https://github.com/spoorthibasu/mor-faithfulness" target="_blank" data-ev="project-mor-faithfulness">MOR Faithfulness</a>
+                </h3>
+                <p class="fp-desc">When a CDC stream is materialized by a merge-on-read table, is the &ldquo;current&rdquo; row per key actually correct, and can you tell from the physical table alone? A Lean 4 and Mathlib development proves the ordering value must linearly extend logical version order, and that in general you cannot tell. Ships with a read-only checker, a FLINK-38450 reproduction, and an audit-preserving compaction mechanism for Iceberg.</p>
+                <div class="fp-tags">
+                    <span>Lean 4</span><span>Apache Iceberg</span><span>Apache Hudi</span><span>Delta Lake</span><span>Python</span>
+                </div>
+                <div class="fp-links">
+                    <a href="https://github.com/spoorthibasu/mor-faithfulness" target="_blank" data-ev="project-mor-faithfulness" class="fp-gh"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="fp-code">
+                <div class="code-bar">
+                    <div class="code-dots"><span class="cr"></span><span class="cy"></span><span class="cg"></span></div>
+                    <span class="code-file">MorFaithful/*.lean</span>
+                </div>
+                <pre class="code-pre"><code><span class="t-c">/-- Def 6. Faithful: the materialized set is
+    exactly the current version. -/</span>
+<span class="t-k">def</span> <span class="t-cn">Faithful</span> : <span class="t-ty">Prop</span> :=
+  distinct M.Zphys = <span class="t-ty">Finsupp.single</span> M.cur 1
+
+<span class="t-c">/-- Def 7. LinearExtension: seq strictly
+    increases along logical order. -/</span>
+<span class="t-k">def</span> <span class="t-cn">LinearExtension</span> : <span class="t-ty">Prop</span> :=
+  &#8704; i j, i &lt; j &#8594; M.s i &lt; M.s j
+
+<span class="t-c">/-- Corrected MAIN. -/</span>
+<span class="t-k">theorem</span> <span class="t-cn">prefixFaithful_iff_linear</span>
+    (inj : <span class="t-ty">Function.Injective</span> M.d) :
+    M.<span class="t-ty">PrefixFaithful</span> &harr; M.<span class="t-ty">LinearExtension</span> :=
+  &lang;M.linear_of_prefixFaithful inj,
+   M.prefixFaithful_of_linear&rang;
+
+<span class="t-c">-- No `sorry`. 15 theorems audited
+-- against the 3 standard axioms.</span></code></pre>
+            </div>
+        </div>
+        </div>
+
         <div class="proj-grid">
             <div class="proj-card reveal">
                 <div class="pc-top">
@@ -285,7 +402,7 @@
                     <a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail" class="pc-ext"><i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <h3 class="pc-title"><a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail">Kafka Flink Audit Trail</a></h3>
-                <p class="pc-desc">Flink pipeline writing profile change events to an append-only Iceberg table. Historical state reconstructed at query time via SQL window functions.</p>
+                <p class="pc-desc">Flink pipeline writing profile change events to an append-only Iceberg table. Old values are rebuilt at query time with <code>LAG</code> and window functions instead of stored in previous-value columns.</p>
                 <div class="pc-tags"><span>Flink</span><span>Kafka</span><span>Iceberg</span><span>SQL</span></div>
             </div>
             <div class="proj-card reveal">
@@ -320,59 +437,6 @@
                 <h3 class="pc-title">Safe Driving: Collision Prevention</h3>
                 <p class="pc-desc">Demo vehicle using Renesas Microcontroller with ultrasonic sensors. Proximity alerts via CubeSuite++, with AWS storing messages to nearby vehicles.</p>
                 <div class="pc-tags"><span>Embedded C</span><span>Renesas</span><span>AWS</span></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ======= CREDENTIALS ======= -->
-<section id="credentials" class="credentials">
-    <div class="si">
-        <h2 class="stitle reveal">Education &amp; Credentials</h2>
-        <div class="cred-grid">
-            <div class="cred-card cred-card--fill reveal">
-                <div class="cred-ico"><i class="fas fa-graduation-cap"></i></div>
-                <h3 class="cred-head">Education</h3>
-                <div class="cred-row">
-                    <div class="cred-deg">M.S. in Computer Science</div>
-                    <div class="cred-school">Cal Poly Pomona</div>
-                    <div class="cred-meta">2018 &ndash; 2020 &middot; GPA 3.66</div>
-                </div>
-                <div class="cred-row">
-                    <div class="cred-deg">B.S. in Computer Science</div>
-                    <div class="cred-school">Dr. Ambedkar Institute of Technology</div>
-                    <div class="cred-meta">2014 &ndash; 2018 &middot; GPA 4.0</div>
-                </div>
-            </div>
-            <div class="cred-card reveal">
-                <div class="cred-ico"><i class="fas fa-book-open"></i></div>
-                <h3 class="cred-head">Publication</h3>
-                <div class="cred-row">
-                    <div class="cred-deg">Schema Proliferation in Kafka and Flink Pipelines</div>
-                    <div class="cred-school">InfoQ &middot; 2026</div>
-                    <p class="cred-desc">Explores schema proliferation in event-driven systems and presents a discriminator-based consolidation approach for scalable Kafka and Flink pipelines.</p>
-                    <ul class="cred-hl">
-                        <li><i class="fas fa-trophy"></i><span><strong>#1 Top Article</strong> in InfoQ's weekly Round-Up</span></li>
-                        <li><i class="fas fa-eye"></i><span><strong>550K+</strong> monthly readers</span></li>
-                        <li><i class="fas fa-user-check"></i><span>Peer-reviewed</span></li>
-                    </ul>
-                    <a class="cred-link" href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="credentials">Read on InfoQ <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="cred-card reveal">
-                <div class="cred-ico"><i class="fas fa-code-branch"></i></div>
-                <h3 class="cred-head">Open Source</h3>
-                <div class="cred-row">
-                    <div class="cred-deg">Apache Flink CDC Contributor</div>
-                    <div class="cred-school">apache/flink-cdc &middot; 2026</div>
-                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes. Also fixed a JobManager OOM on large MySQL CDC tables caused by retained snapshot-split metadata.</p>
-                    <ul class="cred-hl">
-                        <li><i class="fas fa-check-circle"></i><span>Merged, shipping in <strong>Flink CDC 3.7</strong></span></li>
-                        <li><i class="fas fa-stream"></i><span>Streaming-data internals</span></li>
-                        <li><i class="fas fa-user-check"></i><span>Reviewed by a committer</span></li>
-                    </ul>
-                    <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
-                </div>
             </div>
         </div>
     </div>
@@ -450,26 +514,26 @@
 <!-- ======= ACTIVITY ======= -->
 <section class="activity">
     <div class="si">
-        <h2 class="stitle reveal">Professional Activity</h2>
+        <h2 class="stitle reveal">Community &amp; Mentorship</h2>
         <div class="act-grid">
             <div class="act-card reveal">
-                <div class="act-ico"><i class="fas fa-microphone-alt"></i></div>
-                <h4 class="act-title">Presenter: Keys to Success</h4>
-                <p class="act-org">Cal Poly Pomona Graduate Student Welcome</p>
+                <div class="act-ico"><i class="fas fa-chalkboard-teacher"></i></div>
+                <h4 class="act-title">Keys to Success</h4>
+                <p class="act-org">Cal Poly Pomona &middot; Incoming Graduate Student Welcome</p>
                 <ul class="act-list">
-                    <li>Gave a talk to 50+ students on my journey in Computer Science</li>
-                    <li>Addressed the transition from undergraduate to graduate school</li>
+                    <li>Talked 50+ incoming students through my path into Computer Science</li>
+                    <li>Focused on the transition from undergraduate to graduate school</li>
                 </ul>
                 <a class="act-link" href="https://www.cpp.edu/gradstudies/index.shtml" target="_blank" data-ev="activity-cpp">Cal Poly Pomona <i class="fas fa-arrow-right"></i></a>
             </div>
             <div class="act-card reveal">
                 <div class="act-ico"><i class="fas fa-gavel"></i></div>
                 <h4 class="act-title">Judge, Game Gala 2021</h4>
-                <p class="act-org">Coding Competition for Gamers</p>
+                <p class="act-org">K&ndash;12 Coding Competition</p>
                 <ul class="act-list">
                     <li>Evaluated 20+ K-12 developers on digital game projects</li>
                     <li>Provided feedback on code quality and game performance</li>
-                    <li>Participated in selecting the competition winner</li>
+                    <li>Helped select the competition winner</li>
                 </ul>
                 <a class="act-link" href="http://gamegala.org/" target="_blank" data-ev="activity-gamegala">Game Gala 2021 <i class="fas fa-arrow-right"></i></a>
             </div>
