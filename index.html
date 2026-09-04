@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <script defer src="assets/fontawesome/js/all.js"></script>
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=10">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=13">
     <meta property="og:title" content="Spoorthi Basu">
     <meta name="image" property="og:image" content="https://spoorthibasu.github.io/assets/images/spoorthi_basu.jpg">
     <meta property="og:description" content="Spoorthi Basu, Software Engineer">
@@ -232,7 +232,7 @@
                     <ul class="cred-hl">
                         <li><i class="fas fa-trophy"></i><span><strong>#1 Top Article</strong> in InfoQ's weekly Round-Up</span></li>
                         <li><i class="fas fa-eye"></i><span><strong>550K+</strong> monthly readers</span></li>
-                        <li><i class="fas fa-user-check"></i><span>Peer-reviewed</span></li>
+                        <li><i class="fas fa-user-check"></i><span>Reviewed by a <strong>Java Champion</strong></span></li>
                     </ul>
                     <a class="cred-link" href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="credentials">Read on InfoQ <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -243,15 +243,23 @@
                 <div class="cred-row">
                     <div class="cred-deg">Apache Flink CDC Contributor</div>
                     <div class="cred-school">apache/flink-cdc &middot; 2026</div>
-                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes. Also fixed a JobManager OOM on large MySQL CDC tables caused by retained snapshot-split metadata.</p>
+                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes. Also fixed a JobManager OOM on a <strong>2.5B-row</strong> MySQL CDC table retaining ~300K snapshot splits.</p>
                     <ul class="cred-hl">
-                        <li><i class="fas fa-check-circle"></i><span>Merged, shipping in <strong>Flink CDC 3.7</strong></span></li>
-                        <li><i class="fas fa-stream"></i><span>Streaming-data internals</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Iceberg sink fix <strong>merged, shipping in 3.7</strong></span></li>
+                        <li><i class="fas fa-hourglass-half"></i><span>JobManager OOM fix <strong>open, in review</strong></span></li>
                         <li><i class="fas fa-user-check"></i><span>Reviewed by a committer</span></li>
                     </ul>
                     <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
+        </div>
+
+        <div class="ur reveal">
+            <div class="ur-head"><i class="fas fa-file-alt"></i> Under Review</div>
+            <ul class="ur-list">
+                <li><span class="ur-title">Audit-Preserving Compaction for Merge-on-Read Tables</span><span class="ur-venue">PVLDB</span></li>
+                <li><span class="ur-title">The History Was Already There</span><span class="ur-venue">CACM Practice</span></li>
+            </ul>
         </div>
     </div>
 </section>
@@ -274,14 +282,16 @@
                         <div class="tl-period">Mar 2021 · Present</div>
                     </div>
                     <ul class="tl-bullets">
-                        <li>Built Flink pipelines turning company-wide Kafka streams into schema-driven Iceberg/S3 datasets at <strong>hundreds of millions of events/day</strong>.</li>
-                        <li>Architected and built the company's <strong>first end-to-end data validation framework</strong>, catching data issues before customers; <strong>adopted by 3 teams</strong>.</li>
+                        <li>Built Flink pipelines behind the company&rsquo;s <strong>first data lakehouse</strong>, turning company-wide Kafka streams into schema-driven Iceberg/S3 datasets at <strong>hundreds of millions of events/day</strong>; recognized with the company&rsquo;s <strong>Go Big Award</strong>.</li>
+                        <li>Authored public <strong>Genesys Cloud</strong> Data Lakehouse dataset documentation for schemas I built, including <a href="https://developer.genesys.cloud/analyticsdatamanagement/analytics/extraction/extractiondatasetreference/" target="_blank" data-ev="genesys-docs" data-ev-source="experience">agent presence definitions</a>, <a href="https://developer.genesys.cloud/analyticsdatamanagement/analytics/extraction/extractiondatasetreference/conversation_custom_attribute" target="_blank" data-ev="genesys-docs" data-ev-source="experience">conversation attribute updates</a>, <a href="https://developer.genesys.cloud/analyticsdatamanagement/analytics/extraction/extractiondatasetreference/external_contacts" target="_blank" data-ev="genesys-docs" data-ev-source="experience">external contacts</a>, and <a href="https://developer.genesys.cloud/analyticsdatamanagement/analytics/extraction/extractiondatasetreference/outbound_campaign_contact" target="_blank" data-ev="genesys-docs" data-ev-source="experience">outbound campaign contacts</a>.</li>
+                        <li>Architected and built the company's <strong>first end-to-end data validation framework</strong>, asserting correctness, completeness, compliance, and query performance across <strong>Kafka, Flink, and Iceberg</strong>; <strong>adopted by 3 teams</strong>, run continuously.</li>
                         <li>Scaled fault-tolerant Java/Kafka microservices to <strong>10M+ events/day</strong>, cutting latency <strong>25%</strong>.</li>
                         <li>Engineered customer-facing REST APIs at <strong>5K+ RPS</strong> with Redis cache sharding, <strong>halving DB load</strong>.</li>
                         <li>Stood up org-wide integration testing <strong>0&rarr;1</strong> (LocalStack/AWS), cutting test creation to <strong>&lt;1 min</strong> for <strong>5+ teams</strong>.</li>
                         <li>Delivered <strong>99.99% uptime</strong> via multi-region deployment and circuit breakers (Resilience4j).</li>
                         <li>Drove <strong>10+ customer-facing features</strong> with Product and QA, growing daily active users <strong>25%</strong>.</li>
-                        <li>Mentored a junior engineer (halved onboarding) and held a <strong>15-min P0/P1 SLA</strong>.</li>
+                        <li>Owned <strong>on-call triage</strong> for production data services with a <strong>sub-5-min P0/P1 response SLA</strong>, fixing incidents same day.</li>
+                        <li>Mentored a junior engineer and ramped teammates onto the export project, <strong>halving onboarding time</strong>.</li>
                     </ul>
                 </div>
             </div>
@@ -359,7 +369,7 @@
                 <h3 class="fp-title">
                     <a href="https://github.com/spoorthibasu/mor-faithfulness" target="_blank" data-ev="project-mor-faithfulness">MOR Faithfulness</a>
                 </h3>
-                <p class="fp-desc">When a CDC stream is materialized by a merge-on-read table, is the &ldquo;current&rdquo; row per key actually correct, and can you tell from the physical table alone? A Lean 4 and Mathlib development proves the ordering value must linearly extend logical version order, and that in general you cannot tell. Ships with a read-only checker, a FLINK-38450 reproduction, and an audit-preserving compaction mechanism for Iceberg.</p>
+                <p class="fp-desc">When a CDC stream is materialized by a merge-on-read table, is the &ldquo;current&rdquo; row per key actually correct, and can you tell from the physical table alone? A Lean 4 and Mathlib development proves the ordering value must linearly extend logical version order, and that in general you cannot tell. Compaction then destroys the evidence: a read-only checker certified all <strong>5,440</strong> flagged violations as clean once it ran. An audit-preserving compaction mechanism recovers all 5,440 with no false positives, in <strong>657 lines</strong> that are off by default and change nothing in the reader or the format spec. Ships with the checker and a FLINK-38450 reproduction. Companion artifact to a paper under review at PVLDB.</p>
                 <div class="fp-tags">
                     <span>Lean 4</span><span>Apache Iceberg</span><span>Apache Hudi</span><span>Delta Lake</span><span>Python</span>
                 </div>
@@ -389,7 +399,7 @@
   &lang;M.linear_of_prefixFaithful inj,
    M.prefixFaithful_of_linear&rang;
 
-<span class="t-c">-- No `sorry`. 15 theorems audited
+<span class="t-c">-- No `sorry`. 21 theorems audited
 -- against the 3 standard axioms.</span></code></pre>
             </div>
         </div>
@@ -402,17 +412,8 @@
                     <a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail" class="pc-ext"><i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <h3 class="pc-title"><a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail">Kafka Flink Audit Trail</a></h3>
-                <p class="pc-desc">Flink pipeline writing profile change events to an append-only Iceberg table. Old values are rebuilt at query time with <code>LAG</code> and window functions instead of stored in previous-value columns.</p>
+                <p class="pc-desc">Flink pipeline writing profile change events to an append-only Iceberg table. Old values are rebuilt at query time with <code>LAG</code> and window functions instead of stored in previous-value columns. Removing <strong>67</strong> previous-value fields cut schema size <strong>48%</strong> and Avro payloads <strong>38%</strong>. Companion to an article under review at CACM Practice.</p>
                 <div class="pc-tags"><span>Flink</span><span>Kafka</span><span>Iceberg</span><span>SQL</span></div>
-            </div>
-            <div class="proj-card reveal">
-                <div class="pc-top">
-                    <i class="fas fa-folder-open pc-ico"></i>
-                    <a href="https://github.com/spoorthibasu/Automated-Clinical-System-for-General-Check-ups" target="_blank" data-ev="project-health-web" class="pc-ext"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <h3 class="pc-title"><a href="https://github.com/spoorthibasu/Automated-Clinical-System-for-General-Check-ups" target="_blank" data-ev="project-health-web">Health Web</a></h3>
-                <p class="pc-desc">Clinic website deployed on AWS enabling patients to find nearby doctors and book appointments. Java backend with MySQL via JDBC.</p>
-                <div class="pc-tags"><span>Java</span><span>JSP</span><span>MySQL</span><span>AWS</span></div>
             </div>
             <div class="proj-card reveal">
                 <div class="pc-top">
@@ -432,12 +433,6 @@
                 <p class="pc-desc">Deep autoencoder using U-NET for hair/skin segmentation with Keras, tested on Celeb-A dataset with data augmentation and transfer learning.</p>
                 <div class="pc-tags"><span>Keras</span><span>U-NET</span><span>NumPy</span></div>
             </div>
-            <div class="proj-card reveal">
-                <div class="pc-top"><i class="fas fa-folder-open pc-ico"></i></div>
-                <h3 class="pc-title">Safe Driving: Collision Prevention</h3>
-                <p class="pc-desc">Demo vehicle using Renesas Microcontroller with ultrasonic sensors. Proximity alerts via CubeSuite++, with AWS storing messages to nearby vehicles.</p>
-                <div class="pc-tags"><span>Embedded C</span><span>Renesas</span><span>AWS</span></div>
-            </div>
         </div>
     </div>
 </section>
@@ -455,6 +450,8 @@
                     <span class="badge">Apache Iceberg</span>
                     <span class="badge">Avro</span>
                     <span class="badge">Schema Registry</span>
+                        <span class="badge">CDC</span>
+                        <span class="badge">Exactly-Once Semantics</span>
                 </div>
             </div>
             <div class="skill-cat reveal">
@@ -464,6 +461,7 @@
                     <span class="badge">Python</span>
                     <span class="badge">JavaScript</span>
                     <span class="badge">SQL</span>
+                        <span class="badge">Lean 4</span>
                 </div>
             </div>
             <div class="skill-cat reveal">
