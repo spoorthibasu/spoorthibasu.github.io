@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <script defer src="assets/fontawesome/js/all.js"></script>
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=13">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=14">
     <meta property="og:title" content="Spoorthi Basu">
     <meta name="image" property="og:image" content="https://spoorthibasu.github.io/assets/images/spoorthi_basu.jpg">
     <meta property="og:description" content="Spoorthi Basu, Software Engineer">
@@ -26,7 +26,7 @@
         </button>
         <ul class="nav-links">
             <li><a href="#about" data-ev="nav-click" data-ev-target="about">About</a></li>
-            <li><a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Speaking</a></li>
+            <li><a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Credentials</a></li>
             <li><a href="#experience" data-ev="nav-click" data-ev-target="experience">Experience</a></li>
             <li><a href="#projects" data-ev="nav-click" data-ev-target="projects">Projects</a></li>
             <li><a href="#skills" data-ev="nav-click" data-ev-target="skills">Skills</a></li>
@@ -38,7 +38,7 @@
     </div>
     <nav class="nav-mobile-menu" id="nav-mobile-menu">
         <a href="#about" data-ev="nav-click" data-ev-target="about">About</a>
-        <a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Speaking</a>
+        <a href="#credentials" data-ev="nav-click" data-ev-target="credentials">Credentials</a>
         <a href="#experience" data-ev="nav-click" data-ev-target="experience">Experience</a>
         <a href="#projects" data-ev="nav-click" data-ev-target="projects">Projects</a>
         <a href="#skills" data-ev="nav-click" data-ev-target="skills">Skills</a>
@@ -66,7 +66,7 @@
             <div class="hero-signals">
                 <a href="#credentials" data-ev="talk-dss-2026" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fas fa-microphone-alt"></i> Speaker &middot; Data Streaming Summit 2026</a>
                 <a href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fas fa-book-open"></i> InfoQ Published Author</a>
-                <a href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fab fa-github"></i> Apache Flink CDC Contributor</a>
+                <a href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu" target="_blank" data-ev="flink-cdc-prs" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fab fa-github"></i> Apache Flink CDC Contributor</a>
                 <a href="#experience" data-ev="hero-metric-events" class="hero-signal hero-signal--link"><i class="fas fa-server"></i> 100M+ Events / Day</a>
             </div>
             <div class="hero-actions">
@@ -159,7 +159,7 @@
             <div class="about-bio reveal">
                 <p>I'm a Software Engineer with 5+ years building the infrastructure that makes data move: reliably, at scale, and in real time. At Genesys, I've engineered systems processing hundreds of millions of events per day, APIs that handle 5K+ requests per second, and testing infrastructure that went from zero to production-grade in weeks.</p>
                 <p>My work spans the full data path, from Kafka topics and Flink jobs to Iceberg tables and the REST APIs that serve data to end users. I care deeply about correctness, fault tolerance, and the operational rigor that makes systems boring, which is exactly what production needs.</p>
-                <p>I recently built the company's first end-to-end data validation framework, now adopted across three teams. I've also published in InfoQ on schema proliferation in Kafka and Flink pipelines, and I'm an active contributor to Apache Flink CDC. This October I'll be speaking at Data Streaming Summit 2026 in San Francisco on why the pipelines behind AI agent memory fail silently.</p>
+                <p>I recently built the company's first end-to-end data validation framework, now adopted across three teams. I've also published in InfoQ on schema proliferation in Kafka and Flink pipelines, and I'm an active contributor to Apache Flink CDC. On October 8 I'll be speaking at Data Streaming Summit 2026 in San Francisco on why the pipelines behind AI agent memory fail silently.</p>
             </div>
             <div class="about-aside reveal">
                 <div class="aside-card">
@@ -191,19 +191,20 @@
         <div class="speak-feature reveal">
             <div class="speak-ico"><i class="fas fa-microphone-alt"></i></div>
             <div class="speak-body">
-                <div class="speak-eye">Upcoming Talk <span class="speak-pill">Accepted</span></div>
+                <div class="speak-eye">Upcoming Talk <span class="speak-pill">Scheduled</span></div>
                 <h3 class="speak-title">Your Agent&rsquo;s Memory Is Only as Good as the Pipeline Behind It</h3>
                 <div class="speak-meta">
-                    <span><i class="fas fa-bullhorn"></i> Data Streaming Summit 2026</span>
-                    <span><i class="fas fa-calendar-alt"></i> Oct 7&ndash;8, 2026</span>
-                    <span><i class="fas fa-map-marker-alt"></i> San Francisco, CA</span>
+                    <span><i class="fas fa-bullhorn"></i> <a href="https://datastreaming-summit.org/dss2026" target="_blank" data-ev="talk-dss-2026" data-ev-source="credentials-meta">Data Streaming Summit 2026</a></span>
+                    <span><i class="fas fa-calendar-alt"></i> Thu, Oct 8, 2026 &middot; 1:30 PM</span>
+                    <span><i class="fas fa-layer-group"></i> Context &amp; Memory for Agents track &middot; Nikko 1</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Hotel Nikko, San Francisco, CA</span>
                 </div>
                 <p class="speak-desc">I don&rsquo;t build agents. I build the pipelines that feed them. Durable memory and continuous context are CDC problems wearing new clothes. Kafka into a vector store, Flink into a lakehouse, a change log materialized into something an agent reads. That path breaks without ever tripping an alarm. Exactly-once is a guarantee about processing, not about what ends up in your table. An agent doesn&rsquo;t crash on wrong memory. It answers confidently, and you never trace it back.</p>
                 <ul class="cred-hl">
-                    <li><i class="fas fa-check-circle"></i><span>Selected through the open <strong>Call for Proposals</strong></span></li>
+                    <li><i class="fas fa-check-circle"></i><span>Selected through the open <strong>Call for Papers</strong></span></li>
                     <li><i class="fas fa-clipboard-check"></i><span>Correctness checks across <strong>Kafka, Flink, and Iceberg</strong></span></li>
                 </ul>
-                <a class="cred-link" href="https://datastreaming-summit.org/" target="_blank" data-ev="talk-dss-2026" data-ev-source="credentials">Data Streaming Summit <i class="fas fa-arrow-right"></i></a>
+                <a class="cred-link" href="https://datastreaming-summit.org/dss2026" target="_blank" data-ev="talk-dss-2026" data-ev-source="credentials">View the Summit Agenda <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
 
@@ -243,13 +244,12 @@
                 <div class="cred-row">
                     <div class="cred-deg">Apache Flink CDC Contributor</div>
                     <div class="cred-school">apache/flink-cdc &middot; 2026</div>
-                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes. Also fixed a JobManager OOM on a <strong>2.5B-row</strong> MySQL CDC table retaining ~300K snapshot splits.</p>
+                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes, and a JobManager OOM on a <strong>2.5B-row</strong> MySQL table holding ~300K snapshot splits. Now extending that fix into the base framework so Postgres, SQL Server, Oracle, and Db2 sources get it too.</p>
                     <ul class="cred-hl">
-                        <li><i class="fas fa-check-circle"></i><span>Iceberg sink fix <strong>merged, shipping in 3.7</strong></span></li>
-                        <li><i class="fas fa-hourglass-half"></i><span>JobManager OOM fix <strong>open, in review</strong></span></li>
-                        <li><i class="fas fa-user-check"></i><span>Reviewed by a committer</span></li>
+                        <li><i class="fas fa-check-circle"></i><span>Fixes <strong>merged, shipping in 3.7</strong></span></li>
+                        <li><i class="fas fa-database"></i><span>Iceberg sink &middot; MySQL, Postgres, SQL Server, Oracle, Db2 sources</span></li>
                     </ul>
-                    <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu+is%3Aall" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
+                    <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
