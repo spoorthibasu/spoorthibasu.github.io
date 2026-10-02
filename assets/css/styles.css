@@ -409,6 +409,16 @@ strong { font-weight: 600; color: var(--tx); }
     border-radius: 50%;
     background: radial-gradient(circle, rgba(99,102,241,0.28) 0%, transparent 65%);
     filter: blur(32px);
+    z-index: 0;
+}
+/* Gradient ring — same spec as the Open Graph card's photo treatment */
+.hero-photo-wrap::before {
+    content: '';
+    position: absolute;
+    inset: -7px;
+    border-radius: 50%;
+    z-index: 1;
+    background: linear-gradient(145deg, var(--ind) 0%, rgba(99,102,241,0.15) 55%, rgba(99,102,241,0) 100%);
 }
 .hero-photo {
     width: 350px;
@@ -416,10 +426,10 @@ strong { font-weight: 600; color: var(--tx); }
     object-fit: cover;
     object-position: center top;
     border-radius: 50%;
-    border: 2px solid var(--border2);
+    border: none;
     position: relative;
-    z-index: 1;
-    box-shadow: 0 0 0 8px rgba(99,102,241,0.1), 0 28px 70px rgba(0,0,0,0.5);
+    z-index: 2;
+    box-shadow: 0 28px 70px rgba(0,0,0,0.5);
 }
 
 /* Scroll hint */
@@ -849,7 +859,7 @@ strong { font-weight: 600; color: var(--tx); }
 
 .fp-links { display: flex; gap: 20px; flex-wrap: wrap; }
 
-.fp-gh, .fp-art {
+.fp-gh, .fp-art, .pc-gh {
     display: inline-flex;
     align-items: center;
     gap: 7px;
@@ -857,8 +867,8 @@ strong { font-weight: 600; color: var(--tx); }
     font-weight: 600;
     transition: color 0.18s;
 }
-.fp-gh  { color: var(--txm); }
-.fp-gh:hover { color: var(--tx); }
+.fp-gh, .pc-gh  { color: var(--txm); }
+.fp-gh:hover, .pc-gh:hover { color: var(--tx); }
 .fp-art { color: var(--txm); }
 .fp-art:hover { color: var(--tx); }
 
@@ -920,23 +930,17 @@ strong { font-weight: 600; color: var(--tx); }
     padding: 28px;
     display: flex;
     flex-direction: column;
-    transition: border-color 0.22s, transform 0.2s, box-shadow 0.22s;
+    transition: border-color 0.25s;
 }
 .proj-card:hover {
     border-color: var(--ind-br);
-    transform: translateY(-3px);
-    box-shadow: 0 14px 44px rgba(0,0,0,0.35);
 }
 
 .pc-top {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
-.pc-ico { font-size: 26px; color: var(--ind); }
-.pc-ext { font-size: 14px; color: var(--txd); transition: color 0.18s; }
-.pc-ext:hover { color: var(--ind-lt); }
 
 .pc-title {
     font-family: 'Montserrat', sans-serif;
@@ -949,6 +953,8 @@ strong { font-weight: 600; color: var(--tx); }
 }
 .pc-title a { color: inherit; transition: color 0.18s; }
 .pc-title a:hover { color: var(--ind-lt); }
+
+.pc-links { display: flex; gap: 20px; flex-wrap: wrap; margin-top: 16px; }
 
 .pc-desc {
     font-size: 13.5px;
@@ -1098,7 +1104,7 @@ strong { font-weight: 600; color: var(--tx); }
     box-shadow: 0 0 32px rgba(99,102,241,0.06);
 }
 
-.cred-ico {
+.cred-ico, .pc-ico {
     width: 44px; height: 44px;
     border-radius: 11px;
     background: var(--ind-gl);
