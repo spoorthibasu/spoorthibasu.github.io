@@ -1026,17 +1026,6 @@ strong { font-weight: 600; color: var(--tx); }
     text-transform: uppercase;
     margin-bottom: 12px;
 }
-.speak-pill {
-    padding: 3px 10px;
-    border-radius: 20px;
-    background: rgba(34,197,94,0.12);
-    border: 1px solid rgba(34,197,94,0.32);
-    color: #4ade80;
-    font-size: 10.5px;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-}
-
 .speak-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -1183,6 +1172,8 @@ strong { font-weight: 600; color: var(--tx); }
     color: var(--tx);
     font-weight: 600;
 }
+.cred-hl a { color: var(--ind-lt); transition: color 0.18s; }
+.cred-hl a:hover { color: var(--tx); }
 .cred-card--fill {
     display: flex;
     flex-direction: column;
