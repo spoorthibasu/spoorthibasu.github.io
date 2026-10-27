@@ -9,14 +9,14 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <script defer src="assets/fontawesome/js/all.js"></script>
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=25">
-    <meta name="description" content="I build distributed systems that move data at scale. Apache Flink CDC contributor, InfoQ author, and Data Streaming Summit 2026 speaker.">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css?v=33">
+    <meta name="description" content="I build distributed systems that move data at scale. Apache Flink contributor, InfoQ author, and Data Streaming Summit 2026 speaker.">
     <link rel="canonical" href="https://spoorthibasu.github.io/">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Spoorthi Basu">
     <meta property="og:title" content="Spoorthi Basu — Software Engineer">
-    <meta property="og:description" content="I build distributed systems that move data at scale. Apache Flink CDC contributor, InfoQ author, and Data Streaming Summit 2026 speaker.">
+    <meta property="og:description" content="I build distributed systems that move data at scale. Apache Flink contributor, InfoQ author, and Data Streaming Summit 2026 speaker.">
     <meta property="og:url" content="https://spoorthibasu.github.io/">
     <meta property="og:image" content="https://spoorthibasu.github.io/assets/images/og-card.jpg">
     <meta property="og:image:type" content="image/jpeg">
@@ -26,7 +26,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Spoorthi Basu — Software Engineer">
-    <meta name="twitter:description" content="I build distributed systems that move data at scale. Apache Flink CDC contributor, InfoQ author, and Data Streaming Summit 2026 speaker.">
+    <meta name="twitter:description" content="I build distributed systems that move data at scale. Apache Flink contributor, InfoQ author, and Data Streaming Summit 2026 speaker.">
     <meta name="twitter:image" content="https://spoorthibasu.github.io/assets/images/og-card.jpg">
     <meta name="twitter:image:alt" content="Spoorthi Basu, Software Engineer — Distributed Systems and Real-Time Data Infrastructure">
     <script defer src="https://cloud.umami.is/script.js" data-website-id="a65482a7-5d51-4f77-87db-a0a8a8e39280"></script>
@@ -81,7 +81,7 @@
             <div class="hero-signals">
                 <a href="#credentials" data-ev="talk-dss-2026" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fas fa-microphone-alt"></i> Speaker &middot; Data Streaming Summit 2026</a>
                 <a href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fas fa-book-open"></i> InfoQ Published Author</a>
-                <a href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu" target="_blank" data-ev="flink-cdc-prs" data-ev-source="hero" class="hero-signal hero-signal--link"><i class="fab fa-github"></i> Apache Flink CDC Contributor</a>
+                <span class="hero-signal hero-signal--link hero-signal--logo"><a class="hs-logo" href="https://flink.apache.org/" target="_blank" rel="noopener" aria-label="Apache Flink project website" data-ev="flink-project" data-ev-source="hero"><span class="hs-squirrel" aria-hidden="true"></span></a><a class="hs-main" href="#open-source" data-ev="open-source" data-ev-source="hero">Apache Flink Contributor</a></span>
                 <a href="#experience" data-ev="hero-metric-events" class="hero-signal hero-signal--link"><i class="fas fa-server"></i> 100M+ Events / Day</a>
             </div>
             <div class="hero-actions">
@@ -112,7 +112,7 @@
 <div id="metrics" class="metrics">
     <div class="metrics-inner">
         <div class="metric reveal">
-            <div class="metric-num">5<span>+</span></div>
+            <div class="metric-num">6<span>+</span></div>
             <div class="metric-lbl">Years of<br>experience</div>
         </div>
         <div class="metric-sep"></div>
@@ -145,6 +145,12 @@
                 <div class="spec-tags"><span>Kafka</span><span>Flink</span><span>Iceberg</span><span>Avro</span></div>
             </div>
             <div class="spec-card reveal">
+                <div class="spec-ico"><i class="fas fa-database"></i></div>
+                <h3>Data Infrastructure</h3>
+                <p>End-to-end data platforms: event modeling, schema consolidation, download APIs, and analytics infrastructure that scales to hundreds of millions of events per day.</p>
+                <div class="spec-tags"><span>AWS S3</span><span>DynamoDB</span><span>Schema Design</span></div>
+            </div>
+            <div class="spec-card reveal">
                 <div class="spec-ico"><i class="fas fa-network-wired"></i></div>
                 <h3>Distributed Systems</h3>
                 <p>Fault-tolerant, multi-region Java microservices with circuit breakers, event partitioning, and 99.99% uptime across sustained production workloads.</p>
@@ -156,12 +162,6 @@
                 <p>Spring Boot REST APIs handling 5K+ RPS with Redis cache sharding that cuts database load by 50%, built for reliability under sustained traffic.</p>
                 <div class="spec-tags"><span>Spring Boot</span><span>Redis</span><span>REST</span></div>
             </div>
-            <div class="spec-card reveal">
-                <div class="spec-ico"><i class="fas fa-database"></i></div>
-                <h3>Data Infrastructure</h3>
-                <p>End-to-end data platforms: event modeling, schema consolidation, download APIs, and analytics infrastructure that scales to hundreds of millions of events per day.</p>
-                <div class="spec-tags"><span>AWS S3</span><span>DynamoDB</span><span>Schema Design</span></div>
-            </div>
         </div>
     </div>
 </section>
@@ -172,7 +172,7 @@
         <h2 class="stitle reveal">About Me</h2>
         <div class="about-grid">
             <div class="about-bio reveal">
-                <p>I'm a Software Engineer with 5+ years building the infrastructure that makes data move: reliably, at scale, and in real time. At Genesys, I've engineered systems processing hundreds of millions of events per day, APIs that handle 5K+ requests per second, and testing infrastructure that went from zero to production-grade in weeks.</p>
+                <p>I'm a Software Engineer with 6+ years building the infrastructure that makes data move: reliably, at scale, and in real time. At Genesys, I've engineered systems processing hundreds of millions of events per day, APIs that handle 5K+ requests per second, and testing infrastructure that went from zero to production-grade in weeks.</p>
                 <p>My work spans the full data path, from Kafka topics and Flink jobs to Iceberg tables and the REST APIs that serve data to end users. I care deeply about correctness, fault tolerance, and the operational rigor that makes systems boring, which is exactly what production needs.</p>
                 <p>I recently built the company's first data correctness service, spanning Kafka ingestion through to what customers query. I've also published in InfoQ on schema proliferation in Kafka and Flink pipelines, and I'm an active contributor to Apache Flink CDC. I spoke at Data Streaming Summit 2026 in San Francisco on why the pipelines behind AI agent memory fail silently.</p>
             </div>
@@ -224,58 +224,69 @@
             <a class="speak-banner" href="https://datastreaming-summit.org/dss2026" target="_blank" data-ev="talk-dss-2026" data-ev-source="banner"><img src="assets/images/dss-2026-banner.jpg" alt="Data Streaming Summit 2026 speaker banner: Your Agent&rsquo;s Memory Is Only as Good as the Pipeline Behind It, Thursday October 8 2026, 1:30 pm, Spoorthi Basu" loading="lazy" width="1200" height="675"></a>
         </div>
 
-        <div class="cred-grid">
-            <div class="cred-card cred-card--fill reveal">
-                <div class="cred-ico"><i class="fas fa-graduation-cap"></i></div>
-                <h3 class="cred-head">Education</h3>
+        <div class="cred-duo">
+            <div class="cred-card reveal" id="open-source">
+                <div class="cred-ico"><i class="fas fa-code-branch"></i></div>
+                <h3 class="cred-head">Open Source</h3>
                 <div class="cred-row">
-                    <div class="cred-deg">M.S. in Computer Science</div>
-                    <div class="cred-school">Cal Poly Pomona</div>
-                    <div class="cred-meta">2018 &ndash; 2020 &middot; GPA 3.66</div>
-                </div>
-                <div class="cred-row">
-                    <div class="cred-deg">B.S. in Computer Science</div>
-                    <div class="cred-school">Dr. Ambedkar Institute of Technology</div>
-                    <div class="cred-meta">2014 &ndash; 2018 &middot; GPA 4.0</div>
+                    <div class="cred-deg">Apache Flink Contributor</div>
+                    <div class="cred-school">apache/flink &middot; apache/flink-cdc &middot; 2026</div>
+                                        <div class="os-thread">
+                        <p class="cred-desc cred-block"><span class="cred-label">Runtime.</span> Authored <strong>FLIP-619</strong>, a proposed <strong>architecture change to Apache Flink</strong>: coordinator state for <strong>every streaming source</strong> moves out of checkpoint metadata into its own file, more than halving JobManager heap. Backward compatible by design.</p>
+                        <div class="os-stats">
+                            <div class="os-stat"><span class="os-stat-v">120 MB <em>&rarr;</em> 1.4 KB</span><span class="os-stat-l">Metadata</span></div>
+                            <div class="os-stat"><span class="os-stat-v">~68 KB <em>&rarr;</em> ~3 KB</span><span class="os-stat-l">Failover store</span></div>
+                        </div>
+                        <ul class="cred-hl">
+                            <li><i class="fas fa-file-signature"></i><span><strong><a href="https://cwiki.apache.org/confluence/spaces/FLINK/pages/462815651/FLIP-619+Store+large+operator+coordinator+state+outside+the+checkpoint+metadata" target="_blank" data-ev="flip-619" data-ev-source="credentials">FLIP-619</a></strong> &middot; proposed to <strong>apache/flink</strong> core</span></li>
+                        <li><i class="fas fa-database"></i><span>Flink runtime &middot; every streaming source</span></li>
+                        </ul>
+                        <a class="cred-link" href="https://cwiki.apache.org/confluence/spaces/FLINK/pages/462815651/FLIP-619+Store+large+operator+coordinator+state+outside+the+checkpoint+metadata" target="_blank" data-ev="flip-619" data-ev-source="credentials">View FLIP<i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="os-thread">
+                        <p class="cred-desc cred-block"><span class="cred-label">Connectors.</span> Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes, and a JobManager OOM during the snapshot phase of a large MySQL table, then extended that fix into the base framework so every incremental-snapshot source gets it.</p>
+                        <div class="os-stats">
+                            <div class="os-stat"><span class="os-stat-v">2.5B rows</span><span class="os-stat-l">Snapshotted</span></div>
+                            <div class="os-stat"><span class="os-stat-v">~300K splits</span><span class="os-stat-l">In heap</span></div>
+                        </div>
+                        <ul class="cred-hl">
+                            <li><i class="fas fa-check-circle"></i><span><strong>Merged</strong>, released in <strong><a href="https://flink.apache.org/2026/10/10/apache-flink-cdc-3.7.0-release-announcement/" target="_blank" data-ev="flink-cdc-release-3-7-0" data-ev-source="credentials">3.7.0</a></strong></span></li>
+                            <li><i class="fas fa-ticket-alt"></i><span>FLINK-38450 &middot; FLINK-39775 &middot; FLINK-40697 &middot; FLINK-40732</span></li>
+                            <li><i class="fas fa-database"></i><span>Iceberg sink &middot; MySQL, Postgres, SQL Server, Oracle, Db2, MongoDB, OceanBase</span></li>
+                        </ul>
+                        <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
+                    </div>
+
                 </div>
             </div>
             <div class="cred-card reveal">
                 <div class="cred-ico"><i class="fas fa-book-open"></i></div>
-                <h3 class="cred-head">Publication</h3>
+                <h3 class="cred-head">Writing &amp; Research</h3>
                 <div class="cred-row">
                     <div class="cred-deg">Schema Proliferation in Kafka and Flink Pipelines</div>
                     <div class="cred-school">InfoQ &middot; 2026</div>
                     <p class="cred-desc">Explores schema proliferation in event-driven systems and presents a discriminator-based consolidation approach for scalable Kafka and Flink pipelines.</p>
                     <ul class="cred-hl">
-                        <li><i class="fas fa-trophy"></i><span><strong>#1 Top Article</strong> in InfoQ's monthly Round-Up</span></li>
+                        <li><i class="fas fa-trophy"></i><span><strong>#1 Top Article</strong> in InfoQ&rsquo;s monthly Round-Up</span></li>
                         <li><i class="fas fa-eye"></i><span><strong>550K+</strong> monthly readers</span></li>
                         <li><i class="fas fa-user-check"></i><span>Reviewed by a <strong>Java Champion</strong></span></li>
                     </ul>
                     <a class="cred-link" href="https://www.infoq.com/articles/schema-proliferation-problem/" target="_blank" data-ev="article-infoq" data-ev-source="credentials">Read on InfoQ <i class="fas fa-arrow-right"></i></a>
                 </div>
-            </div>
-            <div class="cred-card reveal">
-                <div class="cred-ico"><i class="fas fa-code-branch"></i></div>
-                <h3 class="cred-head">Open Source</h3>
-                <div class="cred-row">
-                    <div class="cred-deg">Apache Flink CDC Contributor</div>
-                    <div class="cred-school">apache/flink-cdc &middot; 2026</div>
-                    <p class="cred-desc">Fixed silent data duplication in the Iceberg sink during in-checkpoint schema changes, and a JobManager OOM on a <strong>2.5B-row</strong> MySQL table holding ~300K snapshot splits. Then extended that fix into the base framework so every incremental-snapshot source connector gets it.</p>
-                    <ul class="cred-hl">
-                        <li><i class="fas fa-check-circle"></i><span>Fixes <strong>released in <a href="https://flink.apache.org/2026/10/10/apache-flink-cdc-3.7.0-release-announcement/" target="_blank" data-ev="flink-cdc-release-3-7-0" data-ev-source="credentials">3.7.0</a></strong></span></li>
-                        <li><i class="fas fa-database"></i><span>Iceberg sink &middot; MySQL, Postgres, SQL Server, Oracle, Db2, MongoDB, OceanBase sources</span></li>
-                    </ul>
-                    <a class="cred-link" href="https://github.com/apache/flink-cdc/pulls?q=is%3Apr+author%3Aspoorthibasu" target="_blank" data-ev="flink-cdc-prs" data-ev-source="credentials">View Pull Requests<i class="fas fa-arrow-right"></i></a>
+                <div class="cred-sub">
+                    <div class="cred-sub-head"><i class="fas fa-file-alt"></i> Under Review</div>
+                    <div class="cred-paper"><div class="cred-deg">Audit-Preserving Compaction for Merge-on-Read Tables</div><div class="cred-school">PVLDB &middot; 2026</div><p class="cred-paper-desc">Compaction destroys the evidence of whether the current row per key was ever correct. This keeps it: <strong>5,440 of 5,440</strong> recovered, machine-checked in <strong>Lean 4</strong>.</p></div>
+                    <div class="cred-paper"><div class="cred-deg">The History Was Already There</div><div class="cred-school">CACM Practice &middot; 2026</div><p class="cred-paper-desc">Rebuilds old values at query time instead of storing previous-value columns: <strong>67</strong> fields removed, schema <strong>48%</strong> smaller, payloads <strong>38%</strong> smaller.</p></div>
                 </div>
             </div>
         </div>
 
-        <div class="ur reveal">
-            <div class="ur-head"><i class="fas fa-file-alt"></i> Under Review</div>
-            <ul class="ur-list">
-                <li><span class="ur-title">Audit-Preserving Compaction for Merge-on-Read Tables</span><span class="ur-venue">PVLDB</span></li>
-                <li><span class="ur-title">The History Was Already There</span><span class="ur-venue">CACM Practice</span></li>
-            </ul>
+        <div class="edu-strip reveal">
+            <div class="edu-head"><i class="fas fa-graduation-cap"></i> Education</div>
+            <div class="edu-items">
+                <div class="edu-item"><span class="edu-deg">M.S. Computer Science</span><span class="edu-school">Cal Poly Pomona</span><span class="edu-meta">2018 &ndash; 2020 &middot; GPA 3.66</span></div>
+                <div class="edu-item"><span class="edu-deg">B.S. Computer Science</span><span class="edu-school">Dr. Ambedkar Institute of Technology</span><span class="edu-meta">2014 &ndash; 2018 &middot; GPA 4.0</span></div>
+            </div>
         </div>
     </div>
 </section>
