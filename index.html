@@ -112,7 +112,7 @@
 <div id="metrics" class="metrics">
     <div class="metrics-inner">
         <div class="metric reveal">
-            <div class="metric-num">6<span>+</span></div>
+            <div class="metric-num">5<span>+</span></div>
             <div class="metric-lbl">Years of<br>experience</div>
         </div>
         <div class="metric-sep"></div>
@@ -172,7 +172,7 @@
         <h2 class="stitle reveal">About Me</h2>
         <div class="about-grid">
             <div class="about-bio reveal">
-                <p>I'm a Software Engineer with 6+ years building the infrastructure that makes data move: reliably, at scale, and in real time. At Genesys, I've engineered systems processing hundreds of millions of events per day, APIs that handle 5K+ requests per second, and testing infrastructure that went from zero to production-grade in weeks.</p>
+                <p>I'm a Software Engineer with 5+ years building the infrastructure that makes data move: reliably, at scale, and in real time. At Genesys, I've engineered systems processing hundreds of millions of events per day, APIs that handle 5K+ requests per second, and testing infrastructure that went from zero to production-grade in weeks.</p>
                 <p>My work spans the full data path, from Kafka topics and Flink jobs to Iceberg tables and the REST APIs that serve data to end users. I care deeply about correctness, fault tolerance, and the operational rigor that makes systems boring, which is exactly what production needs.</p>
                 <p>I recently built the company's first data correctness service, spanning Kafka ingestion through to what customers query. I've also published in InfoQ on schema proliferation in Kafka and Flink pipelines, and I'm an active contributor to Apache Flink CDC. I spoke at Data Streaming Summit 2026 in San Francisco on why the pipelines behind AI agent memory fail silently.</p>
             </div>
@@ -276,7 +276,7 @@
                 <div class="cred-sub">
                     <div class="cred-sub-head"><i class="fas fa-file-alt"></i> Under Review</div>
                     <div class="cred-paper"><div class="cred-deg">Audit-Preserving Compaction for Merge-on-Read Tables</div><div class="cred-school">PVLDB &middot; 2026</div><p class="cred-paper-desc">Compaction destroys the evidence of whether the current row per key was ever correct. This keeps it: <strong>5,440 of 5,440</strong> recovered, machine-checked in <strong>Lean 4</strong>.</p></div>
-                    <div class="cred-paper"><div class="cred-deg">The History Was Already There</div><div class="cred-school">CACM Practice &middot; 2026</div><p class="cred-paper-desc">Rebuilds old values at query time instead of storing previous-value columns: <strong>67</strong> fields removed, schema <strong>48%</strong> smaller, payloads <strong>38%</strong> smaller.</p></div>
+                    <div class="cred-paper"><div class="cred-deg">The History Was Already There</div><div class="cred-school">CACM Practice &middot; 2026</div><p class="cred-paper-desc">Rebuilds old values at query time instead of storing previous-value columns. At <strong>100M events</strong>: <strong>half the storage</strong>, ingest <strong>2&times; faster</strong>, and <strong>over 99.8%</strong> of old values recovered on Wikimedia and Ethereum.</p></div>
                 </div>
             </div>
         </div>
@@ -438,7 +438,7 @@
                     <div class="pc-ico"><i class="fas fa-laptop-code"></i></div>
                 </div>
                 <h3 class="pc-title"><a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail">Kafka Flink Audit Trail</a></h3>
-                <p class="pc-desc">Flink pipeline writing profile change events to an append-only Iceberg table. Old values are rebuilt at query time with <code>LAG</code> and window functions instead of stored in previous-value columns. Removing <strong>67</strong> previous-value fields cut schema size <strong>48%</strong> and Avro payloads <strong>38%</strong>. Companion to an article under review at CACM Practice.</p>
+                <p class="pc-desc">Flink pipeline writing profile change events to an append-only Iceberg table. Old values are rebuilt at query time with <code>LAG</code> and window functions instead of stored in previous-value columns. At <strong>100 million events</strong> it needs <strong>half the storage</strong> and ingests <strong>more than twice as fast</strong>; on Wikimedia and Ethereum it recovered the right old value <strong>over 99.8%</strong> of the time. Companion to an article under review at CACM Practice.</p>
                 <div class="pc-tags"><span>Flink</span><span>Kafka</span><span>Iceberg</span><span>SQL</span></div>
                 <div class="pc-links"><a href="https://github.com/spoorthibasu/kafka-flink-audit-trail" target="_blank" data-ev="project-audit-trail" class="pc-gh"><i class="fab fa-github"></i> GitHub</a></div>
             </div>
