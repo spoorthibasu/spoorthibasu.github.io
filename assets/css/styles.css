@@ -1090,14 +1090,25 @@ strong { font-weight: 600; color: var(--tx); }
     margin-bottom: 14px;
 }
 
+/* the venue sits on its own line under the title, as .cred-school does on every
+   other card — alone there, nothing beside it to be mistaken for */
+.speak-venue {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ind-lt);
+    margin-bottom: 10px;
+}
+.speak-venue a { display: inline-flex; align-items: center; gap: 7px;
+    transition: color 0.18s; }
+
 .speak-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 22px;
+    gap: 6px 22px;              /* tight rows: the three facts read as one block */
     font-size: 13px;
     font-weight: 600;
-    color: var(--ind-lt);
-    margin-bottom: 12px;
+    color: var(--tx);           /* same rung as .cred-deg / .cred-label on the other cards */
+    margin-bottom: 18px;        /* then clear air before the description */
 }
 .speak-meta span {
     display: inline-flex;
@@ -1105,11 +1116,8 @@ strong { font-weight: 600; color: var(--tx); }
     gap: 7px;
 }
 .speak-meta i { font-size: 11.5px; }
-.speak-meta a { transition: color 0.18s; }@media (hover: hover) {
-    .speak-meta a:hover {
-    color: #fff;
-    }
-}
+
+
 
 .speak-desc {
     font-size: 14px;
@@ -1293,13 +1301,17 @@ strong { font-weight: 600; color: var(--tx); }
     font-size: 13px;
     font-weight: 600;
     color: var(--ind-lt);
-    transition: gap 0.18s;
-}@media (hover: hover) {
-    .cred-link:hover {
-    gap: 10px;
-    }
+    transition: gap 0.18s, color 0.18s;
 }
 .cred-link i { font-size: 10px; }
+.speak-links { display: flex; gap: 18px 20px; flex-wrap: wrap; align-items: center; }
+
+@media (hover: hover) {
+    .speak-venue a:hover { color: #fff; }
+    .cred-link:hover { gap: 10px; color: #fff; }
+    /* leading icon, no trailing arrow to nudge — colour alone carries the hover */
+    .speak-links .cred-link:hover { gap: 6px; }
+}
 
 /* ============================================================
    SKILLS
